@@ -148,6 +148,14 @@
 				transform: rotate(-45deg)
 
 
+.h1
+	font-size: 42px
+	font-weight: 700
+
+	+r(1200)
+		font-size: 36px
+
+
 .header
 	grid-area: header
 	display: grid
@@ -166,7 +174,7 @@
 	&__sidebar
 		grid-area: header__sidebar
 		display: grid
-		grid-template: 1fr / minmax(auto, 150px) 1fr
+		grid-template: 1fr / minmax(150px, auto) 1fr
 		grid-gap: 15px
 		align-items: center
 		padding: 25px 0
@@ -201,12 +209,23 @@
 				background-color: $bg
 				min-height: 50px
 				min-width: 150px
-				padding: 0 25px
+				padding: 3px 25px
 				text-align: center
+				max-width: 200px
+
+				+r(992)
+					max-width: 100%
 
 				&:hover
 					color: #fff
 					background-color: $accent
+			
+			img
+				margin-right: 5px
+			
+			span, b
+				color: $accent
+				margin: 0 5px
 
 		&_submenu
 			position: relative
@@ -736,6 +755,7 @@
 			background: linear-gradient(90.35deg, #484848 7.73%, #474747 104.43%)
 			line-height: 1
 			padding-right: 20px
+			min-height: 60px
 
 			+r(1430)
 				padding-right: 15px
@@ -977,6 +997,82 @@
 			max-width: 30px
 
 
+.profile
+
+	&__header
+		grid-template-rows: 1fr
+
+	&__sidebar
+		&_link
+			display: flex
+			align-items: center
+			min-height: 80px
+			font-size: 24px
+			background: #292B2A
+			border-bottom: 1px solid #505050
+			padding: 25px 10px 25px 20px
+
+			img
+				margin-right: 12px
+				max-width: 30px
+				max-height: 30px
+				flex-shrink: 1
+
+			&--active
+				background-color: $accent
+
+	&__main
+		align-items: inherit
+
+	&__content
+		background-color: $bg
+		padding: 50px
+		overflow: auto
+
+		+r(992)
+			padding: 30px
+
+		&_sale
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding: 5px 30px
+			background-color: #ADABAE
+			color: #000
+			min-height: 60px
+			font-size: 18px
+
+			a
+				color: $accent
+
+		&_header
+			grid-auto-flow: column
+			grid-template: inherit
+			padding: 0 30px
+
+	&__table
+		overflow: inherit
+		max-height: fit-content
+
+		&_row
+			grid-auto-flow: column
+			grid-template: inherit
+			min-height: 70px
+			padding: 5px 30px
+			font-size: 24px
+
+	&__col
+		&--8
+			grid-template-columns: repeat(8, 1fr)
+
+		&--5
+			grid-template-columns: repeat(5, 1fr)
+
+		&--4
+			grid-template-columns: repeat(4, 1fr)
+
+		&--3
+			grid-template-columns: repeat(3, 1fr)
 
 .footer
 	grid-area: footer

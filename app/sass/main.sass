@@ -83,7 +83,7 @@
 	border: none
 	background-color: transparent
 	transition: all .3s
-	width: 25px
+	width: 30px
 	height: 18px
 	outline: none
 
@@ -95,7 +95,7 @@
 		right: 0
 		top: 50%
 		transform: translate(0, -50%)
-		width: 25px
+		width: 30px
 		height: 3px
 		background-color: $text
 		border-radius: 4px
@@ -110,7 +110,7 @@
 			right: 0
 			background-color: $text
 			height: 3px
-			width: 25px
+			width: 30px
 			+transition
 
 		&::before
@@ -210,6 +210,7 @@
 			&:hover
 				ul
 					display: block
+					z-index: 100
 
 				a
 					&::after
@@ -254,6 +255,7 @@
 		grid-template: 1fr / 1fr minmax(515px, auto)
 		grid-gap: 3px
 		z-index: 1
+		+transition
 
 		+r(1430)
 			grid-template: 1fr / 1fr minmax(350px, auto)
@@ -261,11 +263,32 @@
 		+r(992)
 			position: fixed
 			left: 100%
+			top: 0
+			min-width: 100vw
+			min-height: 100vh
+			height: 100%
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			overflow: auto
+			gap: 20px
+			background: #1E1E1E
+			z-index: 1000
+			padding: 25px 50px
+
+		+r(480)
+			padding: 20px
 
 		&_menu
 			display: grid
 			grid-auto-flow: column
 			grid-gap: 3px
+
+			+r(992)
+				display: flex
+				flex-direction: column
+				gap: 10px
+				order: 1
 
 			ul
 				height: 100%
@@ -288,6 +311,13 @@
 				+r(1430)
 					font-size: 18px
 					padding: 0 15px
+				
+				+r(992)
+					font-size: 16px
+					line-height: 1.1
+					padding: 20px
+					text-align: left
+					justify-content: flex-start
 
 				&:hover
 					color: #fff
@@ -303,6 +333,10 @@
 			+r(1430)
 				grid-template: 1fr / 2fr minmax(auto, 90px)
 				padding: 15px
+
+			+r(992)
+				grid-template: 1fr 1fr / 1fr
+				grid-gap: 10px
 
 			div
 				position: relative
@@ -328,8 +362,12 @@
 				height: 100%
 				padding-left: 40px
 
+				+r(992)
+					height: 50px
+
 			button
 				background-color: $accent
+				max-width: 240px
 
 				&:hover
 					color: $text
@@ -364,6 +402,38 @@
 					+r(1430)
 						min-height: 50px
 						font-size: 14px
+
+		&--mobile
+
+			&_header
+				display: none
+
+				+r(992)
+					display: flex
+					justify-content: space-between
+					align-items: center
+
+			&_title
+				font-size: 36px
+				line-height: 1
+				font-weight: 700
+
+			&_sidebar
+				display: none
+
+				+r(992)
+					display: flex
+					flex-direction: column
+					justify-content: space-between
+					gap: 10px
+					width: 100%
+					order: 2
+				
+				a
+					justify-content: flex-start
+
+		&--active
+			left: 0
 
 	&__label
 		grid-area: header__label

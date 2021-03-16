@@ -4,7 +4,7 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>Mazera - Referral</title>
+	<title>Mazera - Edit profile</title>
 	<meta name="description" content="Startup HTML Optimized">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="img/favicon.ico">
@@ -125,12 +125,12 @@
 							</a>
 						</li>
 						<li>
-							<a href="#" class="profile__menu_link profile__menu_link--active">
+							<a href="#" class="profile__menu_link">
 								<img src="img/profile__sidebar5.svg" alt="">Реферальная система
 							</a>
 						</li>
 						<li>
-							<a href="#" class="profile__menu_link">
+							<a href="#" class="profile__menu_link profile__menu_link--active">
 								<img src="img/profile__sidebar6.svg" alt="">Профиль
 							</a>
 						</li>
@@ -149,49 +149,33 @@
 			</aside>
 
 			<section class="profile__content main__content content">
-				<h1 class="h1">Реферальная система</h1>
-
-				<div class="profile__content_wrap">
-					<div class="profile__content_sale">
-						<p><b>Реферальная система</b></p>
-						<p><a href="#"><b>Статистика</b></a></p>
-					</div>
-					<div class="profile__col--6 profile__content_header content__header">
-						<p>Статус кода</p>
-						<p>Реферальная ссылка</p>
-						<p>Личный кабинет реферала</p>
-						<p>Баланс</p>
-						<p>%</p>
-						<p>Кошелек</p>
-					</div>
-					<div class="profile__table content__table">
-						<div class="profile__table_row content__table_row">
-							<p>Вы не учавствуете в реферальной программе.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="profile__content_wrap">
-					<div class="profile__content_sale">
-						<p><b>Подать заявку</b></p>
-					</div>
-				</div>
+				<h1 class="h1">Редактирование профиля</h1>
 
 				<form action="#" class="profile__form">
 					<p class="profile__form_line">
-						<label for="code" class="profile__form_label">Реф.Код:</label>
-						<input id="code" class="profile__form_input" type="text">
+						<label for="name" class="profile__form_label">Имя:</label>
+						<input id="name" class="profile__form_input" type="text">
 					</p>
 					<p class="profile__form_line">
-						<label for="purse" class="profile__form_label">Кошелек для вывода:</label>
-						<input id="purse" class="profile__form_input" type="text">
+						<button class="btn">Сохранить</button>
+					</p>
+				</form>
+
+				<form action="#" class="profile__form">
+					<p class="profile__form_line">
+						<label for="password" class="profile__form_label">Старый пароль:</label>
+						<input id="password" class="profile__form_input" type="text">
 					</p>
 					<p class="profile__form_line">
-						<label for="percent" class="profile__form_label">Желаемый процент с продаж:</label>
-						<input id="percent" class="profile__form_input" type="text">
+						<label for="newPassword" class="profile__form_label">Новый пароль:</label>
+						<input id="newPassword" class="profile__form_input" type="text">
 					</p>
 					<p class="profile__form_line">
-						<button class="btn">Создать</button>
+						<label for="repeatPassword" class="profile__form_label">Повторите новый пароль:</label>
+						<input id="repeatPassword" class="profile__form_input" type="text">
+					</p>
+					<p class="profile__form_line">
+						<button class="btn">Сохранить</button>
 					</p>
 				</form>
 

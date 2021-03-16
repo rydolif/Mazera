@@ -4,7 +4,7 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>Mazera - Ticket</title>
+	<title>Mazera - Add Ticket</title>
 	<meta name="description" content="Startup HTML Optimized">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="img/favicon.ico">
@@ -149,29 +149,35 @@
 			</aside>
 
 			<section class="profile__content main__content content">
-				<h1 class="h1">Тикеты</h1>
-
-				<a href="profile_addticket.html" class="btn">Создать тикет</a>
-
-				<div class="profile__content_label">
-					<p><b>У Вас нет тикетов, создайте тикет с Вашим вопросом.</b></p>
-				</div>
+				<h1 class="h1">Создание тикета</h1>
 
 				<form action="#" class="profile__form">
 					<p class="profile__form_line">
-						<label for="code" class="profile__form_label">Реф.Код:</label>
+						<label for="code" class="profile__form_label">Название:</label>
 						<input id="code" class="profile__form_input" type="text">
 					</p>
 					<p class="profile__form_line">
-						<label for="purse" class="profile__form_label">Кошелек для вывода:</label>
-						<input id="purse" class="profile__form_input" type="text">
+						<label for="cat" class="profile__form_label">Категория:</label>
+						<select name='cat' id='cat' class='form__select'>
+							<option value='Общие вопросы 1' selected='selected'>Общие вопросы</option>
+							<option value='Общие вопросы 2'>Общие вопросы 2</option>
+							<option value='Общие вопросы 3'>Общие вопросы 3</option>
+							<option value='Общие вопросы 4'>Общие вопросы 4</option>
+						</select>
 					</p>
 					<p class="profile__form_line">
-						<label for="percent" class="profile__form_label">Желаемый процент с продаж:</label>
-						<input id="percent" class="profile__form_input" type="text">
+						<label for="textarea" class="profile__form_label">Описание:</label>
+						<textarea id="textarea" name="textarea"></textarea>
 					</p>
 					<p class="profile__form_line">
-						<button class="btn">Создать</button>
+						<img src="img/captcha.jpg" alt="">
+					</p>
+					<p class="profile__form_line">
+						<label for="codeImg" class="profile__form_label">Код с картинки:</label>
+						<input id="codeImg" class="profile__form_input" type="text">
+					</p>
+					<p class="profile__form_line">
+						<button class="btn">Создать тикет</button>
 					</p>
 				</form>
 

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Mazera</title>
+	<meta name="description" content="Startup HTML Optimized">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="img/favicon.ico">
+	<meta property="og:image" content="img/preview.jpg">
+	<link rel="stylesheet" href="css/app.min.css?v=1">
+	<script src="js/app.min.js" defer></script>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<main class="main">
+
+			<aside class="main__sidebar sidebar">
+				<nav class="profile__menu">
+					<div class="sidebar__header">
+						<div class="sidebar__header_icon">
+							<img src="img/sidebar__header_icon1.svg" alt="">
+						</div>
+						<p>Модалки</p>
+					</div>
+					<ul>
+						<li><a href="#" class="modal__login profile__menu_link">Вход</a></li>
+						<li><a href="#" class="modal__reg profile__menu_link">Регистрация</a></li>
+						<li><a href="#" class="modal__fullreg profile__menu_link">Полная регистрация</a></li>
+						<li><a href="#" class="modal__thanks profile__menu_link">Отправлено на почту</a></li>
+					</ul>
+				</nav>
+			</aside>
+
+			<section class="main__content content">
+				<nav class="profile__menu">
+					<div class="sidebar__header">
+						<div class="sidebar__header_icon">
+							<img src="img/sidebar__header_icon1.svg" alt="">
+						</div>
+						<p>Страницы</p>
+					</div>
+					<ul>
+						<li><a href="index.html" class="profile__menu_link">Главная</a></li>
+						<li><a href="article.html" class="profile__menu_link">Статья</a></li>
+						<li><a href="contacts.html" class="profile__menu_link">Контакты</a></li>
+						<li><a href="table.html" class="profile__menu_link">Таблицы</a></li>
+						<li><a href="services.html" class="profile__menu_link">Услуги</a></li>
+					</ul>
+				</nav>
+				<nav class="profile__menu">
+					<div class="sidebar__header">
+						<div class="sidebar__header_icon">
+							<img src="img/sidebar__header_icon1.svg" alt="">
+						</div>
+						<p>Страницы профиль</p>
+					</div>
+					<ul>
+						<li><a href="profile_index.html" class="profile__menu_link">Главная</a></li>
+						<li><a href="profile_ticket.html" class="profile__menu_link">Тикет</a></li>
+						<li><a href="profile_addticket.html" class="profile__menu_link">Добавить тикет</a></li>
+						<li><a href="profile_buy.html" class="profile__menu_link">Мои покупки</a></li>
+						<li><a href="profile_edit.html" class="profile__menu_link">Редактирование профиля</a></li>
+						<li><a href="profile_referral.html" class="profile__menu_link">Реферальная система</a></li>
+						<li><a href="profile_sale.html" class="profile__menu_link">Доступные скидки</a></li>
+					</ul>
+				</nav>
+			</section>
+
+		</main>
+
+	</div>
+
+	<div class="modal" id="modal__login">
+		<form action="#" class="modal__form form" method="POST">
+
+			<button class="close modal__close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+			
+			<div class="modal__form_header">
+				<h3 class="form__title">Авторизация</h3>
+			</div>
+
+			<div class="modal__form_content">
+				<div class="form__item">
+					<label for="formMail1">Введите E-mail*</label>
+					<input id="formMail1" type="email" name="mail" class="form__input">
+				</div>
+				<div class="form__item">
+					<label for="formPassword1">Введите пароль</label>
+					<input id="formPassword1" type="password" name="password" class="form__input">
+				</div>
+				<div class="form__btn">
+					<button type="submit" class="btn form__btn_button" name="submit">Войти</button>
+				</div>
+				<div class="form__link">
+					<a href="#">Забыли пароль?</a>
+					<a href="#">Зарегистрироваться</a>
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+	<div class="modal" id="modal__reg">
+		<form action="#" class="modal__form form" method="POST">
+
+			<button class="close modal__close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+			
+			<div class="modal__form_header">
+				<h3 class="form__title">Регистрация</h3>
+			</div>
+
+			<div class="modal__form_content">
+				<div class="form__item">
+					<label for="formMail2">Введите E-mail</label>
+					<input id="formMail2" type="email" name="mail" class="form__input">
+				</div>
+				<p class="profile__form_line">
+					<img src="img/captcha.jpg" alt="">
+				</p>
+				<p class="profile__form_line">
+					<label for="codeImg2" class="profile__form_label">Введите защитный код:</label>
+					<input id="codeImg2" class="profile__form_input" type="text">
+				</p>
+				<div class="form__btn">
+					<button type="submit" class="btn form__btn_button" name="submit">Регистрация</button>
+				</div>
+				<div class="form__link">
+					<a href="#">Назад</a>
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+	<div class="modal" id="modal__thanks">
+		<div class="modal__form">
+			<button class="close modal__close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+
+			<div class="modal__thanks_wrap">
+				<img src="img/modal__email.svg" alt="">
+				<p>Для подтверждения регистрации на Вашу почту было отправлено письмо.</p>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="modal" id="modal__fullreg">
+		<form action="#" class="modal__form form" method="POST">
+
+			<button class="close modal__close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+			
+			<div class="modal__form_header">
+				<h3 class="form__title">Регистрация</h3>
+			</div>
+
+			<div class="modal__form_content">
+				<div class="form__item">
+					<label for="formName">Введите Имя</label>
+					<input id="formName" type="email" name="mail" class="form__input">
+				</div>
+				<div class="form__item">
+					<label for="formMail3">Введите E-mail</label>
+					<input id="formMail3" type="email" name="mail" class="form__input">
+				</div>
+				<div class="form__item">
+					<label for="formPassword3">Введите пароль</label>
+					<input id="formPassword3" type="password" name="password" class="form__input">
+				</div>
+				<div class="form__item">
+					<label for="formPassword4">Повторите пароль</label>
+					<input id="formPassword4" type="password" name="password" class="form__input">
+				</div>
+				<p class="profile__form_line">
+					<img src="img/captcha.jpg" alt="">
+				</p>
+				<p class="profile__form_line">
+					<label for="codeImg" class="profile__form_label">Введите защитный код:</label>
+					<input id="codeImg" class="profile__form_input" type="text">
+				</p>
+				<div class="form__btn">
+					<button type="submit" class="btn form__btn_button" name="submit">Регистрация</button>
+				</div>
+				<div class="form__error">
+					<p>Защитный код был указан не верно.</p>
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+</body>
+</html>

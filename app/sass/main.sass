@@ -1320,6 +1320,7 @@
 		height: 30px
 		border-radius: 50%
 		border: none
+		outline: none !important
 		cursor: pointer
 		transition: all .6s
 		background-color: transparent
@@ -1329,7 +1330,6 @@
 			height: 30px
 
 		&:hover
-			outline: none
 			transform: rotate(90deg)
 
 			span
@@ -1354,38 +1354,56 @@
 
 	&__form
 		z-index: 1
-		background-color: #fff
+		background-color: $bg
 		box-shadow: 0 0 16px rgba(0, 0, 0, 0.29)
 		width: 100%
-		max-width: 500px
 		height: auto
-		padding: 50px
-		border: 1px solid #8d8d8e
 		margin: auto
+		max-width: 460px
 		transform: translate(0, -150px)
 		+transition
 
-		&::after
-			border-radius: 20px
-
-		+r(992)
-			max-width: 90vw
-			padding: 40px
-		
 		+r(576)
-			padding: 25px
+			max-width: 90vw
 
-	h3
-		text-transform: none
-		font-size: 1.3em
-		margin-bottom: 20px
+		&_header
+			display: flex
+			justify-content: center
+			align-items: center
+			min-height: 70px
+			background-color: $accent
+
+			h3
+				font-size: 24px
+				font-weight: 400
+				text-align: center
+
+		&_content
+			padding: 30px
+
+			+r(576)
+				padding: 20px
+
+	&__thanks_wrap
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
 		text-align: center
-		font-weight: 600
+		min-height: 420px
+		padding: 50px
+
+		+r(576)
+			padding: 20px
+
+		img
+			width: 100px
+			height: 100px
+			margin: 0 auto 10px
 
 
 .form
 	position: relative
-	max-width: 500px
 	+pseudo
 
 	&::after
@@ -1409,7 +1427,24 @@
 
 	&__item
 		position: relative
-		margin-bottom: 15px
+		margin-bottom: 20px
+
+	&__error
+		color: $accent
+		margin-top: 20px
+		font-weight: 600
+
+	&__link
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		margin-top: 20px
+		
+		a
+			color: #AEAEAE
+			&:hover
+				color: $accent
 
 	&__label
 		font-size: 16px
@@ -1568,59 +1603,6 @@
 
 		&_button
 			@extend .btn
-
-	&__error
-		position: absolute
-		bottom: -15px
-		right: 25px
-		left: 25px
-		transition: all .3s
-		animation: error .3s linear 1 forwards
-		color: #fff
-		text-align: center
-		font-weight: 600
-		background-color: red
-		border-radius: 10px
-		z-index: 1
-
-		&::before
-			content: ''
-			position: absolute
-			left: 50%
-			top: -8px
-			margin-left: -2px
-			border-bottom: 4px solid red
-			border-left: 4px solid transparent
-			border-right: 4px solid transparent
-			border-top: 4px solid transparent
-
-	&__nav
-
-		&_wrap
-			display: flex
-			flex-direction: column
-			margin-bottom: 20px
-
-		&_item
-			display: flex
-			margin-bottom: 10px
-
-		&_button
-			display: flex
-			flex-shrink: 0
-
-			a
-				display: flex
-				justify-content: center
-				align-items: center
-				width: 40px
-				height: 40px
-				border-radius: 50%
-				box-shadow: 0 0 5px 0 rgba(#000, .3)
-				padding: 0
-				margin-left: 10px
-
-			img
-				max-width: 50%
+			max-width: 100%
 
 

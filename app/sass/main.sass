@@ -1060,9 +1060,10 @@
 				display: grid
 
 			a
-				text-align: left
-				justify-content: flex-start
-				min-height: 60px
+				+r(992)
+					text-align: left
+					justify-content: flex-start
+					min-height: 60px
 
 	&__main
 		+r(576)
@@ -1074,7 +1075,7 @@
 		background-color: $bg
 		padding: 50px
 
-		+r(992)
+		+r(1200)
 			padding: 30px
 
 		&_wrap

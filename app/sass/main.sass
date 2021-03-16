@@ -255,6 +255,7 @@
 				top: 100%
 				display: none
 				width: 100%
+				box-shadow: 0 0 2px 0 rgba(#fff, .33)
 
 				a
 					min-height: 50px
@@ -267,6 +268,7 @@
 
 	&__logo
 		display: block
+		max-width: 150px
 
 		img
 			width: 100%
@@ -456,7 +458,7 @@
 					justify-content: flex-start
 
 		&--active
-			left: 0
+			left: 0 !important
 
 	&__label
 		grid-area: header__label
@@ -662,30 +664,6 @@
 			overflow: auto
 			padding: 15px
 
-		&::-webkit-scrollbar
-			width: 7px
-			height: 8px
-			background-color: #D7D6D6
-			cursor: pointer
-
-		&::-webkit-scrollbar-thumb
-			background-color: $accent
- 
-		&::-webkit-scrollbar-thumb:hover
-			background-color: $accent
-
-		&::-webkit-scrollbar-button:vertical:start:decrement
-			background-color: #f6f8f4
-
-		&::-webkit-scrollbar-button:vertical:end:increment
-			background-color: #f6f8f4
-
-		&::-webkit-scrollbar-button:horizontal:start:decrement
-			background-color: #f6f8f4
-
-		&::-webkit-scrollbar-button:horizontal:end:increment
-			background-color: #f6f8f4
-
 	&__header
 		display: grid
 		grid-template: 1fr / minmax(80px, auto) 2fr 1fr 1fr minmax(120px, auto)
@@ -720,30 +698,6 @@
 			overflow: inherit
 			max-height: 810px
 			min-width: 750px
-
-		&::-webkit-scrollbar
-			width: 7px
-			height: 8px
-			background-color: #D7D6D6
-			cursor: pointer
-
-		&::-webkit-scrollbar-thumb
-			background-color: $accent
- 
-		&::-webkit-scrollbar-thumb:hover
-			background-color: $accent
-
-		&::-webkit-scrollbar-button:vertical:start:decrement
-			background-color: #f6f8f4
-
-		&::-webkit-scrollbar-button:vertical:end:increment
-			background-color: #f6f8f4
-
-		&::-webkit-scrollbar-button:horizontal:start:decrement
-			background-color: #f6f8f4
-
-		&::-webkit-scrollbar-button:horizontal:end:increment
-			background-color: #f6f8f4
 
 		&_row
 			display: grid
@@ -999,10 +953,28 @@
 
 .profile
 
+	&__logo
+		display: none
+
+		+r(992)
+			display: block
+
 	&__header
 		grid-template-rows: 1fr
+		padding-top: 30px
 
-	&__sidebar
+		+r(992)
+			grid-template: 1fr / 1fr 1fr
+			align-items: center
+
+		.hamburger
+			margin-right: 0
+			margin-left: auto
+
+	&__menu
+		+r(992)
+			display: none
+
 		&_link
 			display: flex
 			align-items: center
@@ -1011,6 +983,15 @@
 			background: #292B2A
 			border-bottom: 1px solid #505050
 			padding: 25px 10px 25px 20px
+
+			&:hover
+				background-color: $accent
+				color: #fff
+
+			+r(992)
+				min-height: 60px
+				font-size: 16px
+				padding: 15px 20px
 
 			img
 				margin-right: 12px
@@ -1021,16 +1002,78 @@
 			&--active
 				background-color: $accent
 
+		&--mobile
+			display: none
+
+			+r(992)
+				display: block
+				width: 100%
+
+	&__sidebar
+		padding: 0
+		+transition
+
+		+r(992)
+			position: fixed
+			left: 100%
+			top: 0
+			min-width: 100vw
+			min-height: 100vh
+			height: 100%
+			display: flex
+			flex-direction: column
+			justify-content: flex-start
+			width: 100% !important
+			overflow: auto
+			gap: 20px
+			background: #1E1E1E
+			z-index: 1000
+			padding: 25px 50px
+
+		+r(480)
+			padding: 20px
+
+		.header__nav--mobile_header
+			width: 100%
+
+		&_nav
+			+r(992)
+				width: 100%
+				grid-gap: 0
+				grid-template: 1fr / 1fr
+				align-items: center
+				order: 2
+
+			&:last-child
+				order: 1
+
+		&_menu
+			+r(992)
+				grid-auto-flow: row
+				width: 100%
+
+			+r(767)
+				display: grid
+
+			a
+				text-align: left
+				justify-content: flex-start
+				min-height: 60px
+
 	&__main
 		align-items: inherit
 
 	&__content
 		background-color: $bg
+		display: grid
 		padding: 50px
-		overflow: auto
 
 		+r(992)
 			padding: 30px
+
+		&_wrap
+			margin-right: 30px
+			overflow: auto
 
 		&_sale
 			display: flex
@@ -1041,6 +1084,7 @@
 			color: #000
 			min-height: 60px
 			font-size: 18px
+			min-width: 900px
 
 			a
 				color: $accent
@@ -1049,10 +1093,15 @@
 			grid-auto-flow: column
 			grid-template: inherit
 			padding: 0 30px
+			min-width: 900px
+
+			+r(1720)
+				font-size: 18px
 
 	&__table
 		overflow: inherit
 		max-height: fit-content
+		min-width: 900px
 
 		&_row
 			grid-auto-flow: column
@@ -1060,6 +1109,9 @@
 			min-height: 70px
 			padding: 5px 30px
 			font-size: 24px
+
+			+r(1720)
+				font-size: 18px
 
 	&__col
 		&--8
@@ -1073,6 +1125,7 @@
 
 		&--3
 			grid-template-columns: repeat(3, 1fr)
+
 
 .footer
 	grid-area: footer

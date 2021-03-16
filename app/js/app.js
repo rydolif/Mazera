@@ -85,19 +85,18 @@ document.addEventListener("DOMContentLoaded", function() {
 		// headerFixed('.header', '.header--active');
 	
 	//----------------------HAMBURGER-----------------------
-		const hamburger = (hamburgerButton, hamburgerNav, hamburgerHeader) => {
+		const hamburger = (hamburgerButton, hamburgerNav) => {
 			const button = document.querySelectorAll(hamburgerButton),
 						nav = document.querySelector(hamburgerNav);
 
 				button.forEach(item => {
 				item.addEventListener('click', (e) => {
-					// item.classList.toggle('hamburger--active');
 					nav.classList.toggle('header__nav--active');
 				});
 			});
 
 		};
-		hamburger('.hamburger', '.header__nav', '.header');
+		hamburger('.hamburger', '.menu');
 		
 	//----------------------MODAL-----------------------
 		const modals = (modalSelector) => {

@@ -83,3 +83,29 @@ input, textarea, select
 
 	&::placeholder
 		color: $text
+
+
+*
+	&::-webkit-scrollbar
+		width: 7px
+		height: 8px
+		background-color: #D7D6D6
+		cursor: pointer
+
+	&::-webkit-scrollbar-thumb
+		background-color: $accent
+
+	&::-webkit-scrollbar-thumb:hover
+		background-color: $accent
+
+	&::-webkit-scrollbar-button:vertical:start:decrement
+		background-color: #f6f8f4
+
+	&::-webkit-scrollbar-button:vertical:end:increment
+		background-color: #f6f8f4
+
+	&::-webkit-scrollbar-button:horizontal:start:decrement
+		background-color: #f6f8f4
+
+	&::-webkit-scrollbar-button:horizontal:end:increment
+		background-color: #f6f8f4

@@ -19,18 +19,71 @@
 	<div class="wrapper">
 
 		<header class="header profile__header">
-			<div class="header__sidebar">
-				<nav class="header__sidebar_nav">
-					<ul class="header__sidebar_menu">
+			<a href="/" class="profile__logo header__logo">
+				<img src="img/logo.svg" alt="">
+			</a>
+			<button class="hamburger" type="button">
+				<span class="hamburger__item"></span>
+			</button>
+			<div class="header__sidebar profile__sidebar menu">
+				<div class="header__nav--mobile_header">
+					<p class="header__nav--mobile_title">Меню</p>
+					<button class="hamburger hamburger--active" type="button">
+						<span class="hamburger__item"></span>
+					</button>
+				</div>
+				<nav class="profile__menu profile__menu--mobile">
+					<ul>
+						<li>
+							<a href="#" class="profile__menu_link profile__menu_link--active">
+								<img src="img/profile__sidebar1.svg" alt="">Главная
+							</a>
+						</li>
+						<li>
+							<a href="#" class="profile__menu_link">
+								<img src="img/profile__sidebar2.svg" alt="">Перейти в магазин
+							</a>
+						</li>
+						<li>
+							<a href="#" class="profile__menu_link">
+								<img src="img/profile__sidebar3.svg" alt="">Мои покупки
+							</a>
+						</li>
+						<li>
+							<a href="#" class="profile__menu_link">
+								<img src="img/profile__sidebar4.svg" alt="">Доступные скидки
+							</a>
+						</li>
+						<li>
+							<a href="#" class="profile__menu_link">
+								<img src="img/profile__sidebar5.svg" alt="">Реферальная система
+							</a>
+						</li>
+						<li>
+							<a href="#" class="profile__menu_link">
+								<img src="img/profile__sidebar6.svg" alt="">Профиль
+							</a>
+						</li>
+						<li>
+							<a href="#" class="profile__menu_link">
+								<img src="img/profile__sidebar6.svg" alt="">Тикеты
+							</a>
+						</li>
+						<li>
+							<a href="#" class="profile__menu_link">
+								<img src="img/profile__sidebar8.svg" alt="">Выход
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="header__sidebar_nav profile__sidebar_nav">
+					<ul class="header__sidebar_menu profile__sidebar_menu">
 						<li><a href="#">Правила</a></li>
 						<li><a href="#">Отзывы</a></li>
 					</ul>
-					<button class="hamburger" type="button">
-						<span class="hamburger__item"></span>
-					</button>
 				</nav>
-				<nav class="header__sidebar_nav">
-					<ul class="header__sidebar_menu">
+				<nav class="header__sidebar_nav profile__sidebar_nav">
+					<ul class="header__sidebar_menu profile__sidebar_menu">
 						<li class="header__sidebar_submenu">
 							<a href="javascript: void(0)"><img src="img/user.svg" alt="">Ярослав</a>
 							<ul>
@@ -49,45 +102,45 @@
 		<main class="profile__main main">
 
 			<aside class="main__sidebar sidebar">
-				<nav class="profile__sidebar">
+				<nav class="profile__menu">
 					<ul>
 						<li>
-							<a href="#" class="profile__sidebar_link profile__sidebar_link--active">
+							<a href="#" class="profile__menu_link profile__menu_link--active">
 								<img src="img/profile__sidebar1.svg" alt="">Главная
 							</a>
 						</li>
 						<li>
-							<a href="#" class="profile__sidebar_link">
+							<a href="#" class="profile__menu_link">
 								<img src="img/profile__sidebar2.svg" alt="">Перейти в магазин
 							</a>
 						</li>
 						<li>
-							<a href="#" class="profile__sidebar_link">
+							<a href="#" class="profile__menu_link">
 								<img src="img/profile__sidebar3.svg" alt="">Мои покупки
 							</a>
 						</li>
 						<li>
-							<a href="#" class="profile__sidebar_link">
+							<a href="#" class="profile__menu_link">
 								<img src="img/profile__sidebar4.svg" alt="">Доступные скидки
 							</a>
 						</li>
 						<li>
-							<a href="#" class="profile__sidebar_link">
+							<a href="#" class="profile__menu_link">
 								<img src="img/profile__sidebar5.svg" alt="">Реферальная система
 							</a>
 						</li>
 						<li>
-							<a href="#" class="profile__sidebar_link">
+							<a href="#" class="profile__menu_link">
 								<img src="img/profile__sidebar6.svg" alt="">Профиль
 							</a>
 						</li>
 						<li>
-							<a href="#" class="profile__sidebar_link">
+							<a href="#" class="profile__menu_link">
 								<img src="img/profile__sidebar6.svg" alt="">Тикеты
 							</a>
 						</li>
 						<li>
-							<a href="#" class="profile__sidebar_link">
+							<a href="#" class="profile__menu_link">
 								<img src="img/profile__sidebar8.svg" alt="">Выход
 							</a>
 						</li>

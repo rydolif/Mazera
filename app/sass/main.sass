@@ -1616,19 +1616,24 @@
 	&__header
 		position: relative
 		cursor: pointer
+		padding-right: 70px
+
+		+r(1440)
+			padding-right: 30px
+			padding-left: 40px
 
 		span
 			+transition
 			position: absolute
 			top: 50%
 			right: 25px
-			transform: translate(0, -5px) rotate(45deg)
+			transform: translate(0, -12px) rotate(-135deg)
 			width: 24px
 			height: 24px
 			border-top: 5px solid $bg
 			border-left: 5px solid $bg
 
-			+r(1200)
+			+r(1440)
 				right: auto
 				left: 15px
 				width: 15px
@@ -1639,7 +1644,7 @@
 	&__content
 		+transition
 		overflow: hidden
-		color: #b5acac
+		width: fit-content
 		height: 0
 
 	&--active
@@ -1648,7 +1653,7 @@
 			&__header
 
 				span
-					transform: translate(0, -12px) rotate(-135deg)
+					transform: translate(0, -5px) rotate(45deg)
 
 			&__content
 				opacity: 1

@@ -1606,3 +1606,49 @@
 			max-width: 100%
 
 
+.accordion
+	margin-bottom: 10px
+	border-bottom: 1px solid #161B21
+
+	&:last-child
+		margin-bottom: 0
+
+	&__header
+		position: relative
+		cursor: pointer
+
+		span
+			+transition
+			position: absolute
+			top: 50%
+			right: 25px
+			transform: translate(0, -5px) rotate(45deg)
+			width: 24px
+			height: 24px
+			border-top: 5px solid $bg
+			border-left: 5px solid $bg
+
+			+r(1200)
+				right: auto
+				left: 15px
+				width: 15px
+				height: 15px
+				border-top: 3px solid $bg
+				border-left: 3px solid $bg
+
+	&__content
+		+transition
+		overflow: hidden
+		color: #b5acac
+		height: 0
+
+	&--active
+
+		.accordion
+			&__header
+
+				span
+					transform: translate(0, -12px) rotate(-135deg)
+
+			&__content
+				opacity: 1

@@ -3,6 +3,13 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 	//------------------------------ACCORDIONS---------------------------
+		var swiper = new Swiper(".mySwiper", {
+			pagination: {
+				el: ".mySwiperPagination",
+			},
+		});
+
+	//------------------------------ACCORDIONS---------------------------
 		const accordions = (accordionSelector) => {
 			const	accordion = document.querySelectorAll(accordionSelector);
 		

@@ -681,7 +681,7 @@
 
 	&__content
 		display: grid
-		grid-gap: 50px
+		grid-gap: 30px
 		max-width: 100%
 
 		+r(1440)
@@ -1053,7 +1053,6 @@
 
 		img
 			width: 100%
-			margin-bottom: 30px
 
 	&__desc
 		width: 72%
@@ -1125,20 +1124,24 @@
 
 
 .contacts
+	background-color: $light
+	padding: 30px
+
+	+r(1440)
+		padding: 15px
+
+	+r(992)
+		padding: 0
 
 	&__map
 		position: relative
 		width: 100%
-		height: 530px
 		overflow: hidden
-		margin-bottom: 50px
+		margin-bottom: 30px
 
 		img
-			position: absolute
-			left: 50%
-			top: 50%
-			transform: translate(-50%, -50%)
 			object-fit: cover
+			width: 100%
 
 	&__subtitle
 		font-size: 24px
@@ -1146,6 +1149,9 @@
 
 	&__desc
 		font-size: 18px
+
+		+r(992)
+			padding: 0 15px
 
 		+r(767)
 			font-size: 16px
@@ -1155,6 +1161,9 @@
 			margin-bottom: 12px
 			padding-left: 40px
 
+			&:last-child
+				margin-bottom: 0
+
 		span
 			color: #AEAEAE
 
@@ -1162,12 +1171,15 @@
 			+r(767)
 				display: block
 
-		img
+		svg
 			position: absolute
 			left: 0
 			top: 0
 			margin-right: 10px
 			max-width: 30px
+		
+		path
+			fill: $accent
 
 
 .profile

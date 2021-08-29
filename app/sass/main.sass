@@ -8,7 +8,7 @@
 	padding: 0 15px
 	margin: 0 auto
 	display: grid
-	grid-template: minmax(75px, auto) 1fr minmax(75px, auto) / 1fr
+	// grid-template: minmax(75px, auto) 1fr minmax(75px, auto) / 1fr
 	grid-template-areas: 'header' 'hero' 'main' 'footer'
 	grid-gap: 30px
 
@@ -30,6 +30,10 @@
 
 	+r(576)
 		max-width: 480px
+
+	&--page
+		grid-template-areas: 'header' 'main' 'footer'
+
 
 // -----BUTTON-----
 .btn
@@ -979,16 +983,20 @@
 	&__exchanges
 		max-height: 1400px
 
+
 .services
 	&__header
 		display: flex
 		align-items: center
+		gap: 15px
 		min-height: 70px
-		padding: 0 50px
+		padding: 4px 30px
 		margin-bottom: 4px
 		background-color: $accent
-		font-size: 24px
+		text-transform: uppercase
+		font-size: 18px
 		line-height: 1.2
+		color: #051828
 
 		+r(992)
 			padding: 0 30px
@@ -1001,16 +1009,16 @@
 		display: flex
 		align-items: center
 		min-height: 70px
-		padding: 0px 50px
+		padding: 4px 30px
 		margin-bottom: 4px
-		background-color: #484848
+		background-color: $light
 		font-size: 18px
 
 		+r(992)
-			padding: 0 30px
+			padding: 0 20px
 
 		+r(576)
-			padding: 0 15px
+			padding: 0 10px
 			font-size: 16px
 
 		&:last-child

@@ -48,7 +48,7 @@
 	background-color: $accent
 	padding: 0 15px
 	font-size: 16px
-	color: #051828
+	color: $black
 	text-transform: uppercase
 	font-weight: 600
 
@@ -147,7 +147,7 @@
 
 .h1
 	font-size: 42px
-	font-weight: 700
+	font-weight: 400
 
 	+r(1200)
 		font-size: 36px
@@ -205,7 +205,7 @@
 				padding: 3px 25px
 				text-align: center
 				max-width: 200px
-				color: #051828
+				color: $black
 
 				+r(992)
 					max-width: 100%
@@ -217,6 +217,9 @@
 					svg, path
 							fill: $text
 
+					span, b
+						color: $text
+
 			svg, path
 				max-width: 30px
 				max-height: 30px
@@ -225,8 +228,9 @@
 				margin-right: 5px
 			
 			span, b
-				color: $accent
+				color: $black
 				margin: 0 5px
+				+transition
 
 		&_submenu
 			position: relative
@@ -246,8 +250,8 @@
 					display: block
 					width: 7px
 					height: 7px
-					border-top: 1px solid #051828
-					border-left: 1px solid #051828
+					border-top: 1px solid $black
+					border-left: 1px solid $black
 					transform: translate(0, -2px) rotate(-135deg)
 					margin-left: 7px
 
@@ -271,6 +275,9 @@
 			
 			li
 				border-top: 1px solid $text
+
+			svg, path
+				fill: $black
 
 	&__logo
 		display: block
@@ -416,7 +423,7 @@
 				padding: 0 25px
 				text-align: center
 				font-size: 24px
-				color: #051828
+				color: $black
 
 				+r(1440)
 					font-size: 18px
@@ -430,7 +437,7 @@
 					justify-content: flex-start
 
 				&:hover
-					color: #051828
+					color: $black
 					background-color: $light
 					color: #fff
 
@@ -484,7 +491,7 @@
 			button
 				background-color: $accent
 				max-width: 240px
-				color: #051828
+				color: $black
 
 				&:hover
 					color: $text
@@ -728,7 +735,7 @@
 		padding: 20px
 		font-size:  18px
 		line-height: 1
-		color: #051828
+		color: $black
 		text-transform: uppercase
 
 		+r(767)
@@ -867,7 +874,7 @@
 		padding-right: 20px
 		font-size: 24px
 		line-height: 1.3
-		color: #051828
+		color: $black
 
 		+r(1750)
 			font-size: 20px
@@ -996,7 +1003,7 @@
 		text-transform: uppercase
 		font-size: 18px
 		line-height: 1.2
-		color: #051828
+		color: $black
 
 		+r(992)
 			padding: 0 30px
@@ -1184,6 +1191,20 @@
 
 .profile
 
+	&__main
+		grid-template: 1fr/ minmax(auto,340px) 1fr
+		grid-gap: 60px
+
+		+r(1440)
+			grid-gap: 40px
+
+		+r(1200)
+			grid-gap: 30px
+			grid-template: 1fr/ minmax(auto, 260px) 1fr
+
+		+r(992)
+			grid-template: 1fr/ 1fr
+
 	&__logo
 		display: none
 
@@ -1192,6 +1213,8 @@
 
 	&__header
 		grid-template-rows: 1fr
+		padding: 30px 0
+		text-transform: uppercase
 
 		+r(992)
 			grid-template: 1fr / 1fr 1fr
@@ -1216,8 +1239,9 @@
 			align-items: center
 			min-height: 80px
 			font-size: 24px
-			background: #292B2A
+			background: $accent
 			padding: 25px 10px 25px 20px
+			color: $black
 
 			&:hover
 				background-color: $accent
@@ -1228,11 +1252,14 @@
 				font-size: 16px
 				padding: 15px 20px
 
-			img
+			svg
 				margin-right: 12px
 				max-width: 30px
 				max-height: 30px
 				flex-shrink: 1
+
+			path
+				fill: $black
 
 			&--active
 				background-color: $accent
@@ -1248,6 +1275,9 @@
 		padding: 0
 		+transition
 
+		+r(1200)
+			order: 0
+
 		+r(992)
 			position: fixed
 			left: 100%
@@ -1261,7 +1291,7 @@
 			width: 100% !important
 			overflow: auto
 			gap: 20px
-			background: #1E1E1E
+			background: $bg
 			z-index: 1000
 			padding: 25px 50px
 
@@ -1272,6 +1302,8 @@
 			width: 100%
 
 		&_nav
+			justify-items: start
+
 			+r(992)
 				width: 100%
 				grid-gap: 0
@@ -1281,6 +1313,7 @@
 
 			&:last-child
 				order: 1
+				justify-items: end
 
 		&_menu
 			+r(992)
@@ -1296,19 +1329,7 @@
 					justify-content: flex-start
 					min-height: 60px
 
-	&__main
-		// +r(576)
-		// 	margin-left: -15px
-		// 	margin-right: -15px
-		// 	min-width: 100%
-
 	&__content
-		background-color: $bg
-		padding: 50px
-
-		+r(1200)
-			padding: 30px
-
 		&_wrap
 			overflow: auto
 
@@ -1317,7 +1338,7 @@
 			justify-content: space-between
 			align-items: center
 			padding: 5px 30px
-			background-color: #ADABAE
+			background-color: $accent
 			color: #000
 			min-height: 60px
 			font-size: 18px
@@ -1327,8 +1348,8 @@
 				padding: 5px 20px
 
 			a
-				color: $accent
-		
+				color: $black
+
 		&_label
 			display: flex
 			flex-wrap: wrap
@@ -1349,9 +1370,10 @@
 		&_header
 			grid-auto-flow: column
 			grid-template: inherit
-			padding: 0 30px
 			min-width: 900px
-			font-size: 22px
+			font-size: 18px
+			padding-right: 0 !important
+			text-transform: uppercase
 
 			+r(1720)
 				font-size: 18px
@@ -1360,21 +1382,18 @@
 				padding: 0px 20px
 
 	&__table
-		// overflow: inherit
-		// max-height: fit-content
 		min-width: 900px
 		width: 100%
-		bdr
 
 		&_row
 			grid-auto-flow: column
 			grid-template: inherit
 			min-height: 70px
 			padding: 5px 30px
-			font-size: 22px
+			font-size: 18px
 
 			+r(1720)
-				font-size: 18px
+				font-size: 16px
 
 			+r(576)
 				padding: 5px 20px
@@ -1839,19 +1858,11 @@
 
 
 .accordion
-	margin-bottom: 10px
-	border-bottom: 1px solid #161B21
-
-	&:last-child
-		margin-bottom: 0
-
-	+r(1200)
-		margin-bottom: 0
-
 	&__header
 		position: relative
 		cursor: pointer
 		padding-right: 70px
+		text-transform: uppercase
 
 		+r(1440)
 			padding-right: 30px
@@ -1875,6 +1886,9 @@
 				height: 15px
 				border-top: 3px solid $bg
 				border-left: 3px solid $bg
+
+		b
+			font-weight: 400
 
 	&__content
 		+transition

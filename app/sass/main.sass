@@ -44,7 +44,7 @@
 	min-height: 50px
 	max-width: 300px
 	width: 100%
-	background: linear-gradient(90deg, #647295 0%, #455374 100%)
+	background: linear-gradient(270deg, #014941 0%, #028071 100%)
 	background-color: $accent
 	padding: 0 15px
 	font-size: 16px
@@ -57,12 +57,12 @@
 		min-height: 50px
 
 	&:hover
-		background: linear-gradient(90deg, #647295 20%, #455374 100%)
+		background: linear-gradient(270deg, #014941 0%, #028071 100%)
 		color: #fff
 		box-shadow: 0px 0px 10px $accent
 
 	&:active
-		background: linear-gradient(270deg, #939393 20%, #EBEBEB 100%)
+		background: linear-gradient(270deg, #014941 0%, #028071 100%)
 		color: #fff
 		box-shadow: 0px 0px 10px $accent
 
@@ -197,7 +197,7 @@
 				justify-content: center
 				align-items: center
 				gap: 10px
-				background: linear-gradient(90deg, #647295 0%, #455374 100%)
+				background: linear-gradient(270deg, #014941 0%, #028071 100%)
 				min-height: 50px
 				min-width: 150px
 				padding: 3px 25px
@@ -209,11 +209,11 @@
 					max-width: 100%
 
 				&:hover
-					color: $black
-					background:  linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+					color: $text
+					background:  linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
 
 					svg, path
-						fill: $black
+						fill: $text
 
 					span, b
 						color: $text
@@ -280,7 +280,7 @@
 
 	&__logo
 		display: block
-		max-width: 280px
+		max-width: 330px
 
 		+r(1440)
 			max-width: 250px
@@ -344,7 +344,7 @@
 			align-items: center
 			width: 60px
 			height: 60px
-			background: linear-gradient(90deg, #647295 0%, #455374 100%)
+			background: linear-gradient(270deg, #014941 0%, #028071 100%)
 
 			+r(1440)
 				width: 50px
@@ -386,8 +386,7 @@
 			justify-content: space-between
 			overflow: auto
 			gap: 20px
-			background: linear-gradient(90deg, #000000 0%, #434343 100%)
-			background-image: url(../img/body.png)
+			background: linear-gradient(127.59deg, #1A3F3B 0.08%, #012824 100%)
 			z-index: 1000
 			padding: 25px 50px
 
@@ -416,7 +415,7 @@
 				display: flex
 				justify-content: center
 				align-items: center
-				background: linear-gradient(90deg, #647295 0%, #455374 100%)
+				background: linear-gradient(270deg, #014941 0%, #028071 100%)
 				gap: 10px
 				height: 100%
 				width: 100%
@@ -437,11 +436,11 @@
 					justify-content: flex-start
 
 				&:hover
-					background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
-					color: $black
+					background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
+					color: $text
 
 					svg, path
-						fill: $black
+						fill: $text
 
 			svg, path
 				fill: $text
@@ -486,7 +485,7 @@
 					height: 50px
 
 			button
-				background: linear-gradient(90deg, #647295 0%, #455374 100%)
+				background: linear-gradient(270deg, #014941 0%, #028071 100%)
 				max-width: 240px
 				color: $text
 
@@ -528,7 +527,7 @@
 			order: 2
 
 			a
-				background: linear-gradient(90deg, #647295 0%, #455374 100%)
+				background: linear-gradient(270deg, #014941 0%, #028071 100%)
 				width: 50px
 				height: 50px
 			
@@ -594,7 +593,7 @@
 			@extend .sidebar__item
 			text-transform: uppercase
 			background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
-			color: $black
+			color: $text
 
 			&:hover
 				color: $text !important
@@ -603,7 +602,7 @@
 					fill: $text
 
 		svg, path
-			fill: $black
+			fill: $text
 			margin-right: 10px
 
 	&__slider
@@ -650,7 +649,7 @@
 					height: 15px
 
 			.swiper-pagination-bullet-active
-				background: linear-gradient(90deg, #647295 0%, #455374 100%)
+				background: linear-gradient(270deg, #014941 0%, #028071 100%)
 
 
 .main
@@ -763,7 +762,7 @@
 	&__item
 		display: block
 		padding: 20px
-		background-color: #3B3A40
+		background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
 		margin-bottom: 4px
 		font-size: 18px
 
@@ -771,9 +770,8 @@
 			padding: 10px 20px
 
 		&:hover
-			background: #3B3A40
-			background: linear-gradient(90deg, #647295 0%, #455374 100%) !important
-			color: $black
+			background: linear-gradient(270deg,#014941 0,#028071 100%)
+			color: $text
 
 		&_subtitle
 			display: block
@@ -793,7 +791,7 @@
 		justify-content: center
 		align-items: center
 		padding: 55px 20px
-		background: #3B3A40
+		background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
 
 		+r(992)
 			padding: 30px
@@ -874,9 +872,10 @@
 		background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
 		margin-bottom: 4px
 		padding-right: 20px
-		font-size: 24px
+		font-size: 18px
 		line-height: 1.3
 		color: $black
+		text-transform: uppercase
 
 		+r(1750)
 			font-size: 20px
@@ -908,7 +907,7 @@
 			grid-template: 1fr / minmax(80px, auto) 2fr 1fr 2fr minmax(120px, auto)
 			gap: 20px
 			align-items: center
-			background: #3B3A40
+			background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
 			margin-bottom: 4px
 			line-height: 1
 			padding-right: 20px
@@ -1016,7 +1015,7 @@
 		min-height: 70px
 		padding: 4px 30px
 		margin-bottom: 4px
-		background: $bg
+		background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
 		font-size: 18px
 
 		+r(992)
@@ -1034,7 +1033,7 @@
 	display: flex
 	justify-content: space-between
 	gap: 30px
-	background: $bg
+	background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
 	padding: 30px
 	font-size: 18px
 
@@ -1132,7 +1131,7 @@
 
 
 .contacts
-	background: $bg
+	background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
 	padding: 30px
 
 	+r(1440)
@@ -1251,7 +1250,7 @@
 				padding: 15px 20px
 
 			&:hover
-				background: linear-gradient(88.39deg, #B28B54 28.18%, #FDCC80 100.82%)
+				background: linear-gradient(270deg, #014941 0%, #028071 100%)
 				color: $text
 
 				path
@@ -1267,7 +1266,7 @@
 				fill: $black
 
 			&--active
-				background: linear-gradient(90deg, #647295 0%, #455374 100%) !important
+				background: linear-gradient(270deg, #014941 0%, #028071 100%) !important
 				color: $text !important
 
 				path
@@ -1417,7 +1416,7 @@
 			align-items: center
 			font-weight: 400
 			min-height: 70px
-			background: $bg
+			background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
 			padding: 5px 30px
 
 			+r(1200)
@@ -1467,7 +1466,7 @@
 
 	&__form
 		padding: 30px
-		background: $bg
+		background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
 
 		+r(1200)
 			padding: 15px
@@ -1525,7 +1524,7 @@
 		transform: translate(-50%, 0)
 		width: 100vw
 		height: 100%
-		background: #3B3A40
+		background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
 		z-index: -1
 
 		+r(992)
@@ -1666,8 +1665,8 @@
 				color: $black
 
 		&_content
-			padding: 30px
-			background: #3B3A40
+			padding: 20px
+			background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
 
 			+r(1200)
 				padding: 20px
@@ -1683,7 +1682,7 @@
 		text-align: center
 		min-height: 420px
 		padding: 50px
-		background: #3B3A40
+		background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
 
 		+r(576)
 			padding: 20px
@@ -1736,7 +1735,7 @@
 			background-position: 15px 50%
 
 	&__error
-		color: $accent
+		color: #FF4949
 		margin-top: 20px
 		font-weight: 600
 

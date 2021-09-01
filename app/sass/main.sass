@@ -8,7 +8,7 @@
 	padding: 0 15px
 	margin: 0 auto
 	display: grid
-	// grid-template: minmax(75px, auto) 1fr minmax(75px, auto) / 1fr
+	grid-template: minmax(75px, auto) 1fr minmax(75px, auto) / 1fr
 	grid-template-areas: 'header' 'hero' 'main' 'footer'
 	grid-gap: 30px
 
@@ -45,6 +45,7 @@
 	max-width: 300px
 	width: 100%
 	border: 1px solid $accent
+	background: linear-gradient(88.39deg, #B28B54 -0.18%, #FDCC80 100.82%)
 	background-color: $accent
 	padding: 0 15px
 	font-size: 16px
@@ -58,13 +59,13 @@
 
 	&:hover
 		border: 1px solid $accent
-		background: $accent
+		background: linear-gradient(88.39deg, #B28B54 -0.18%, #FDCC80 100.82%)
 		color: #fff
 		box-shadow: 0px 0px 10px $accent
 
 	&:active
 		border: 1px solid #fff
-		background: $accent
+		background: linear-gradient(88.39deg, #B28B54 -0.18%, #FDCC80 100.82%)
 		color: #fff
 		box-shadow: 0px 0px 10px $accent
 
@@ -129,7 +130,7 @@
 
 				&::before,
 				&::after
-					background-color: $accent
+					background-color: linear-gradient(88.39deg, #B28B54 -0.18%, #FDCC80 100.82%)
 
 		.hamburger__item
 			background-color: transparent
@@ -199,7 +200,7 @@
 				justify-content: center
 				align-items: center
 				gap: 10px
-				background-color: $accent
+				background: linear-gradient(88.39deg, #B28B54 -0.18%, #FDCC80 100.82%)
 				min-height: 50px
 				min-width: 150px
 				padding: 3px 25px
@@ -317,7 +318,7 @@
 			display: none
 
 		a, span
-			color: #565656
+			color: #8F090E
 
 		a
 			&:hover
@@ -336,7 +337,7 @@
 		svg, path
 			width: 50%
 			max-width: 70%
-			fill: #fff
+			fill: $black
 			+transition
 
 		a
@@ -345,7 +346,7 @@
 			align-items: center
 			width: 60px
 			height: 60px
-			background-color: $light
+			background: linear-gradient(88.39deg, #B28B54 -0.18%, #FDCC80 100.82%)
 
 			+r(1440)
 				width: 50px
@@ -357,7 +358,7 @@
 
 			&:hover
 				svg, path
-					fill: $accent
+					fill: $bg
 
 			&:active
 				svg, path
@@ -387,7 +388,7 @@
 			justify-content: space-between
 			overflow: auto
 			gap: 20px
-			background: $bg
+			background: linear-gradient(90deg, #341E1E -2.47%, #C60C0C 104.36%)
 			z-index: 1000
 			padding: 25px 50px
 
@@ -416,7 +417,7 @@
 				display: flex
 				justify-content: center
 				align-items: center
-				background-color: $accent
+				background: linear-gradient(88.39deg, #B28B54 -0.18%, #FDCC80 100.82%)
 				gap: 10px
 				height: 100%
 				width: 100%
@@ -452,7 +453,7 @@
 			display: grid
 			grid-template: 1fr / 2fr minmax(auto, 120px)
 			grid-auto-flow: column
-			background-color: $bg
+			background-color: linear-gradient(90deg, #341E1E -2.47%, #C60C0C 104.36%)
 
 			+r(1440)
 				grid-template: 1fr / 2fr minmax(auto, 90px)
@@ -479,7 +480,7 @@
 				+cover
 
 			input
-				background-color: $light
+				background: #A34B4E
 				color: #fff
 				width: 100%
 				height: 100%
@@ -489,7 +490,7 @@
 					height: 50px
 
 			button
-				background-color: $accent
+				background: linear-gradient(88.39deg, #B28B54 -0.18%, #FDCC80 100.82%)
 				max-width: 240px
 				color: $black
 
@@ -531,12 +532,12 @@
 			order: 2
 
 			a
-				background-color: $accent
+				background: linear-gradient(88.39deg, #B28B54 -0.18%, #FDCC80 100.82%)
 				width: 50px
 				height: 50px
 			
 			svg, path
-				fill: $bg
+				fill: $black
 
 		&--mobile
 
@@ -599,7 +600,7 @@
 
 			&:hover
 				svg, path
-					fill: $accent
+					fill: $black
 
 		svg, path
 			fill: $text
@@ -641,7 +642,7 @@
 				display: block
 				width: 20px
 				height: 20px
-				background-color: $bg
+				background: linear-gradient(90deg, #341E1E -2.47%, #C60C0C 104.36%)
 				+transition
 
 				+r(1200)
@@ -649,7 +650,7 @@
 					height: 15px
 
 			.swiper-pagination-bullet-active
-				background-color: $accent
+				background: linear-gradient(88.39deg, #B28B54 -0.18%, #FDCC80 100.82%)
 
 
 .main
@@ -719,7 +720,7 @@
 
 .sidebar
 	&__block
-		background-color: $light
+		background: linear-gradient(90deg, #341E1E -2.47%, #C60C0C 104.36%)
 
 		+r(767)
 			grid-column: 1 / span 2
@@ -731,7 +732,7 @@
 	&__header
 		display: flex
 		align-items: center
-		background: $accent
+		background: linear-gradient(88.39deg, #B28B54 -0.18%, #FDCC80 100.82%)
 		padding: 20px
 		font-size:  18px
 		line-height: 1
@@ -751,7 +752,7 @@
 			align-items: center
 			flex-shrink: 0
 			margin-right: 10px
-			background-color: $accent
+			background-color: linear-gradient(88.39deg, #B28B54 -0.18%, #FDCC80 100.82%)
 
 			+r(767)
 				width: 30px
@@ -770,7 +771,8 @@
 			padding: 10px 20px
 
 		&:hover
-			background-color: rgba($bg, .33)
+			background: linear-gradient(88.39deg,#b28b54 -.18%,#fdcc80 100.82%)
+			color: $black
 
 		&_subtitle
 			display: block
@@ -860,7 +862,7 @@
 				font-size: 36px
 
 	&__wrap
-		background-color: $bg
+		background-color: linear-gradient(90deg, #341E1E -2.47%, #C60C0C 104.36%)
 
 		+r(767)
 			overflow: auto
@@ -869,7 +871,7 @@
 		display: grid
 		grid-template: 1fr / minmax(80px, auto) 2fr 1fr 1fr minmax(120px, auto)
 		gap: 20px
-		background-color: $accent
+		background: linear-gradient(88.39deg, #B28B54 -0.18%, #FDCC80 100.82%)
 		margin-bottom: 4px
 		padding-right: 20px
 		font-size: 24px
@@ -909,9 +911,8 @@
 			grid-template: 1fr / minmax(80px, auto) 2fr 1fr 2fr minmax(120px, auto)
 			gap: 20px
 			align-items: center
-			background-color: $accent
+			background: linear-gradient(90deg, #341E1E -2.47%, #C60C0C 104.36%)
 			margin-bottom: 4px
-			background: $light
 			line-height: 1
 			padding-right: 20px
 			min-height: 60px
@@ -966,7 +967,7 @@
 		&_title
 			display: flex
 			align-items: center
-			background-color: $accent
+			background: linear-gradient(88.39deg, #B28B54 -0.18%, #FDCC80 100.82%)
 			min-height: 60px
 			margin-top: 20px
 			margin-bottom: 4px
@@ -1018,7 +1019,7 @@
 		min-height: 70px
 		padding: 4px 30px
 		margin-bottom: 4px
-		background-color: $light
+		background: linear-gradient(230.68deg, #C5070D 2.58%, #411C1E 100.96%)
 		font-size: 18px
 
 		+r(992)
@@ -1036,7 +1037,7 @@
 	display: flex
 	justify-content: space-between
 	gap: 30px
-	background-color: $light
+	background: linear-gradient(230.68deg, #C5070D 2.58%, #411C1E 100.96%)
 	padding: 30px
 	font-size: 18px
 
@@ -1097,7 +1098,7 @@
 					margin-right: 10px
 					flex-shrink: 0
 					font-size: 24px
-					color: $bg
+					color: $black
 
 					+r(1200)
 						width: 40px
@@ -1131,7 +1132,7 @@
 
 
 .contacts
-	background-color: $light
+	background: linear-gradient(230.68deg, #C5070D 2.58%, #411C1E 100.96%)
 	padding: 30px
 
 	+r(1440)
@@ -1240,7 +1241,7 @@
 			align-items: center
 			min-height: 80px
 			font-size: 24px
-			background: $accent
+			background: linear-gradient(88.39deg, #B28B54 -0.18%, #FDCC80 100.82%)
 			padding: 25px 10px 25px 20px
 			color: $black
 
@@ -1250,7 +1251,7 @@
 				padding: 15px 20px
 
 			&:hover
-				background-color: $light
+				background: linear-gradient(88.39deg, #B28B54 28.18%, #FDCC80 100.82%)
 				color: $text
 
 				path
@@ -1266,7 +1267,7 @@
 				fill: $black
 
 			&--active
-				background-color: $accent
+				background: linear-gradient(88.39deg, #B28B54 28.18%, #FDCC80 100.82%)
 				color: $black
 
 				path
@@ -1299,7 +1300,7 @@
 			width: 100% !important
 			overflow: auto
 			gap: 20px
-			background: $bg
+			background: linear-gradient(90deg, #341E1E -2.47%, #C60C0C 104.36%)
 			z-index: 1000
 			padding: 25px 50px
 
@@ -1321,7 +1322,7 @@
 
 			&:nth-child(3)
 				a
-					background-color: transparent
+					background: transparent
 					color: $text
 					padding: 0
 					min-width: 0
@@ -1358,13 +1359,14 @@
 			justify-content: space-between
 			align-items: center
 			padding: 5px 20px
-			background-color: $accent
+			background: linear-gradient(88.39deg, #B28B54 -0.18%, #FDCC80 100.82%)
 			color: #000
 			min-height: 60px
 			font-size: 18px
 			min-width: 900px
 			font-size: 18px
 			text-transform: uppercase
+			margin-bottom: 10px
 
 			+r(576)
 				padding: 5px 20px
@@ -1380,8 +1382,8 @@
 			flex-wrap: wrap
 			align-items: center
 			padding: 5px 30px
-			background-color: $accent
-			color: #000
+			background: linear-gradient(88.39deg, #B28B54 -0.18%, #FDCC80 100.82%)
+			color: $black
 			min-height: 60px
 			text-transform: uppercase
 			font-size: 18px
@@ -1415,9 +1417,8 @@
 			align-items: center
 			font-weight: 400
 			min-height: 70px
-			background-color: $light
+			background: linear-gradient(230.68deg, #C5070D 2.58%, #411C1E 100.96%)
 			padding: 5px 30px
-
 
 			+r(1200)
 				padding: 3px 15px
@@ -1466,7 +1467,7 @@
 
 	&__form
 		padding: 30px
-		background-color: $light
+		background: linear-gradient(230.68deg, #C5070D 2.58%, #411C1E 100.96%)
 
 		+r(1200)
 			padding: 15px
@@ -1489,7 +1490,6 @@
 			height: 40px
 			line-height: 40px
 			padding: 0 10px
-			background-color: $bg
 
 			&::placeholder
 				line-height: 40px
@@ -1525,7 +1525,7 @@
 		transform: translate(-50%, 0)
 		width: 100vw
 		height: 100%
-		background-color: $light
+		background: linear-gradient(90deg, #341E1E -2.47%, #C60C0C 104.36%)
 		z-index: -1
 
 		+r(992)
@@ -1568,9 +1568,6 @@
 
 		a
 			background-color: $text
-
-		svg, path
-			fill: $light
 
 // -----MODAL-----
 .modal
@@ -1642,7 +1639,7 @@
 
 	&__form
 		z-index: 1
-		background-color: $bg
+		background-color: linear-gradient(90deg, #341E1E -2.47%, #C60C0C 104.36%)
 		box-shadow: 0 0 16px rgba(0, 0, 0, 0.29)
 		width: 100%
 		height: auto
@@ -1669,7 +1666,7 @@
 
 		&_content
 			padding: 30px
-			background-color: $light
+			background: linear-gradient(90deg, #341E1E -2.47%, #C60C0C 104.36%)
 
 			+r(1200)
 				padding: 20px
@@ -1685,6 +1682,7 @@
 		text-align: center
 		min-height: 420px
 		padding: 50px
+		background: linear-gradient(230.68deg, #C5070D 2.58%, #411C1E 100.96%)
 
 		+r(576)
 			padding: 20px
@@ -1763,12 +1761,12 @@
 		height: 40px
 		line-height: 40px
 		padding: 0 15px
-		background-color: $bg
+		background: #A34B4E
 
 		&::placeholder
 			line-height: 40px
 			font-size: 16px
-			color: #808080
+			color: $text
 
 		&:focus
 			box-shadow: 0 0 4px 0 rgba($text, 1)
@@ -1776,13 +1774,13 @@
 		&._error
 			box-shadow: 0 0 4px 0 rgba(red, 1)
 			border-color: red
-	
+
 	&__textarea
 		width: 100%
 		resize: none
 		min-height: 120px
 		padding: 15px
-		background-color: $bg
+		background-color: linear-gradient(90deg, #341E1E -2.47%, #C60C0C 104.36%)
 
 		&._error
 			box-shadow: 0 0 4px 0 rgba(red, 1)
@@ -1830,7 +1828,7 @@
 		border-radius: 5px
 		font-size: 16px
 		padding: 0 15px
-		background-color: $bg
+		background-color: linear-gradient(90deg, #341E1E -2.47%, #C60C0C 104.36%)
 
 	&__file
 

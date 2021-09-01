@@ -4,7 +4,7 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>Geroname</title>
+	<title>Sendstart</title>
 	<meta name="description" content="Startup HTML Optimized">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="img/favicon.ico">
@@ -246,6 +246,9 @@
 					<div class="hero__slider_slide swiper-slide">
 						<img src="img/hero3.jpg" alt="">
 					</div>
+					<div class="hero__slider_slide swiper-slide">
+						<img src="img/hero4.jpg" alt="">
+					</div>
 				</div>
 				<div class="hero__slider_pagination mySwiperPagination"></div>
 			</section>
@@ -253,63 +256,66 @@
 	
 		<main class="main">
 
-			<aside class="main__sidebar sidebar">
+			<aside class="main__log sidebar">
 				<div class="sidebar__block">
 					<div class="sidebar__header">
 						<div class="sidebar__header_icon">
-							<img src="img/sidebar__header_icon3.svg" alt="">
+							<img src="img/sidebar__header_icon4.svg" alt="">
 						</div>
-						<p>Недавно добавленные</p>
+						<p>Войти в аккаунт</p>
 					</div>
-					<a href="#" class="sidebar__item">
-						<span class="sidebar__item_subtitle">Protection</span>
-						<span class="sidebar__item_price">9 000 ₽</span>
-					</a>
-					<a href="#" class="sidebar__item">
-						<span class="sidebar__item_subtitle">Protection</span>
-						<span class="sidebar__item_price">9 000 ₽</span>
-					</a>
-					<a href="#" class="sidebar__item">
-						<span class="sidebar__item_subtitle">Protection</span>
-						<span class="sidebar__item_price">9 000 ₽</span>
-					</a>
-					<a href="#" class="sidebar__item">
-						<span class="sidebar__item_subtitle">Protection</span>
-						<span class="sidebar__item_price">9 000 ₽</span>
-					</a>
-					<a href="#" class="sidebar__item">
-						<span class="sidebar__item_subtitle">Protection</span>
-						<span class="sidebar__item_price">9 000 ₽</span>
-					</a>
+					<form action="#" class="form" method="POST">
+						<div class="modal__form_content">
+							<div class="form__item">
+								<label for="formMail1">Введите E-mail*</label>
+								<input id="formMail1" type="email" name="mail" class="form__input">
+							</div>
+							<div class="form__item">
+								<label for="formPassword1">Введите пароль</label>
+								<input id="formPassword1" type="password" name="password" class="form__input">
+							</div>
+							<div class="form__btn">
+								<button type="submit" class="btn form__btn_button" name="submit">Войти</button>
+							</div>
+							<div class="form__link">
+								<a href="#">Забыли пароль?</a>
+								<a href="#">Зарегистрироваться</a>
+							</div>
+						</div>
+					</form>
 				</div>
+
 				<div class="sidebar__block">
 					<div class="sidebar__header">
 						<div class="sidebar__header_icon">
-							<img src="img/sidebar__header_icon1.svg" alt="">
+							<img src="img/sidebar__header_icon5.svg" alt="">
 						</div>
-						<p>Популярные</p>
+						<p>Поиск</p>
 					</div>
-					<a href="#" class="sidebar__item">
-						<span class="sidebar__item_subtitle">Protection</span>
-						<span class="sidebar__item_price">9 000 ₽</span>
-					</a>
-					<a href="#" class="sidebar__item">
-						<span class="sidebar__item_subtitle">Protection</span>
-						<span class="sidebar__item_price">9 000 ₽</span>
-					</a>
-					<a href="#" class="sidebar__item">
-						<span class="sidebar__item_subtitle">Protection</span>
-						<span class="sidebar__item_price">9 000 ₽</span>
-					</a>
-					<a href="#" class="sidebar__item">
-						<span class="sidebar__item_subtitle">Protection</span>
-						<span class="sidebar__item_price">9 000 ₽</span>
-					</a>
-					<a href="#" class="sidebar__item">
-						<span class="sidebar__item_subtitle">Protection</span>
-						<span class="sidebar__item_price">9 000 ₽</span>
-					</a>
+					<form action="#" class="form" method="POST">
+						<div class="modal__form_content">
+							<div class="form__item form__search">
+								<input id="formSearch1" type="search" name="search" class="form__input" placeholder="Введи название товара">
+							</div>
+							<div class="form__btn">
+								<button type="submit" class="btn form__btn_button" name="submit">Найти</button>
+							</div>
+						</div>
+					</form>
 				</div>
+
+				<div class="sidebar__block sidebar__block--banner">
+					<div class="sidebar__header">
+						<div class="sidebar__header_icon">
+							<img src="img/sidebar__header_icon2.svg" alt="">
+						</div>
+						<p>PARTNER PROGRAM</p>
+					</div>
+					<div class="sidebar__banner">
+						<p class="sidebar__banner_sale">10%</p>
+					</div>
+				</div>
+
 			</aside>
 
 			<section class="main__content content">
@@ -461,66 +467,63 @@
 				</div>
 			</section>
 
-			<aside class="main__log sidebar">
+			<aside class="main__sidebar sidebar">
 				<div class="sidebar__block">
 					<div class="sidebar__header">
 						<div class="sidebar__header_icon">
-							<img src="img/sidebar__header_icon4.svg" alt="">
+							<img src="img/sidebar__header_icon3.svg" alt="">
 						</div>
-						<p>Войти в аккаунт</p>
+						<p>Недавно добавленные</p>
 					</div>
-					<form action="#" class="form" method="POST">
-						<div class="modal__form_content">
-							<div class="form__item">
-								<label for="formMail1">Введите E-mail*</label>
-								<input id="formMail1" type="email" name="mail" class="form__input">
-							</div>
-							<div class="form__item">
-								<label for="formPassword1">Введите пароль</label>
-								<input id="formPassword1" type="password" name="password" class="form__input">
-							</div>
-							<div class="form__btn">
-								<button type="submit" class="btn form__btn_button" name="submit">Войти</button>
-							</div>
-							<div class="form__link">
-								<a href="#">Забыли пароль?</a>
-								<a href="#">Зарегистрироваться</a>
-							</div>
-						</div>
-					</form>
+					<a href="#" class="sidebar__item">
+						<span class="sidebar__item_subtitle">Protection</span>
+						<span class="sidebar__item_price">9 000 ₽</span>
+					</a>
+					<a href="#" class="sidebar__item">
+						<span class="sidebar__item_subtitle">Protection</span>
+						<span class="sidebar__item_price">9 000 ₽</span>
+					</a>
+					<a href="#" class="sidebar__item">
+						<span class="sidebar__item_subtitle">Protection</span>
+						<span class="sidebar__item_price">9 000 ₽</span>
+					</a>
+					<a href="#" class="sidebar__item">
+						<span class="sidebar__item_subtitle">Protection</span>
+						<span class="sidebar__item_price">9 000 ₽</span>
+					</a>
+					<a href="#" class="sidebar__item">
+						<span class="sidebar__item_subtitle">Protection</span>
+						<span class="sidebar__item_price">9 000 ₽</span>
+					</a>
 				</div>
-
 				<div class="sidebar__block">
 					<div class="sidebar__header">
 						<div class="sidebar__header_icon">
-							<img src="img/sidebar__header_icon5.svg" alt="">
+							<img src="img/sidebar__header_icon1.svg" alt="">
 						</div>
-						<p>Поиск</p>
+						<p>Популярные</p>
 					</div>
-					<form action="#" class="form" method="POST">
-						<div class="modal__form_content">
-							<div class="form__item form__search">
-								<input id="formSearch1" type="search" name="search" class="form__input" placeholder="Введи название товара">
-							</div>
-							<div class="form__btn">
-								<button type="submit" class="btn form__btn_button" name="submit">Найти</button>
-							</div>
-						</div>
-					</form>
+					<a href="#" class="sidebar__item">
+						<span class="sidebar__item_subtitle">Protection</span>
+						<span class="sidebar__item_price">9 000 ₽</span>
+					</a>
+					<a href="#" class="sidebar__item">
+						<span class="sidebar__item_subtitle">Protection</span>
+						<span class="sidebar__item_price">9 000 ₽</span>
+					</a>
+					<a href="#" class="sidebar__item">
+						<span class="sidebar__item_subtitle">Protection</span>
+						<span class="sidebar__item_price">9 000 ₽</span>
+					</a>
+					<a href="#" class="sidebar__item">
+						<span class="sidebar__item_subtitle">Protection</span>
+						<span class="sidebar__item_price">9 000 ₽</span>
+					</a>
+					<a href="#" class="sidebar__item">
+						<span class="sidebar__item_subtitle">Protection</span>
+						<span class="sidebar__item_price">9 000 ₽</span>
+					</a>
 				</div>
-
-				<div class="sidebar__block sidebar__block--banner">
-					<div class="sidebar__header">
-						<div class="sidebar__header_icon">
-							<img src="img/sidebar__header_icon2.svg" alt="">
-						</div>
-						<p>PARTNER PROGRAM</p>
-					</div>
-					<div class="sidebar__banner">
-						<p class="sidebar__banner_sale">10%</p>
-					</div>
-				</div>
-
 			</aside>
 
 		</main>

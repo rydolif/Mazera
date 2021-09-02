@@ -1,29 +1,13 @@
 <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<g clip-path="url(#clip0)">
-	<path d="M66.2891 50.513L100.002 71.8255V28.3005L66.2891 50.513Z" fill="url(#paint0_linear)"/>
-	<path d="M0 28.3005V71.8255L33.7125 50.513L0 28.3005Z" fill="url(#paint1_linear)"/>
-	<path d="M93.75 15.625H6.25C3.13125 15.625 0.65625 17.95 0.1875 20.9438L50 53.7625L99.8125 20.9438C99.3438 17.95 96.8688 15.625 93.75 15.625Z" fill="url(#paint2_linear)"/>
-	<path d="M60.5637 54.2871L51.7199 60.1121C51.1949 60.4559 50.6012 60.6246 50.0012 60.6246C49.4012 60.6246 48.8074 60.4559 48.2824 60.1121L39.4387 54.2809L0.201172 79.0996C0.682422 82.0684 3.14492 84.3746 6.25117 84.3746H93.7512C96.8574 84.3746 99.3199 82.0684 99.8012 79.0996L60.5637 54.2871Z" fill="url(#paint3_linear)"/>
-	</g>
-	<defs>
-	<linearGradient id="paint0_linear" x1="100.002" y1="50.063" x2="66.2891" y2="50.063" gradientUnits="userSpaceOnUse">
-	<stop stop-color="#939393"/>
-	<stop offset="1" stop-color="#EBEBEB"/>
-	</linearGradient>
-	<linearGradient id="paint1_linear" x1="33.7125" y1="50.063" x2="0" y2="50.063" gradientUnits="userSpaceOnUse">
-	<stop stop-color="#939393"/>
-	<stop offset="1" stop-color="#EBEBEB"/>
-	</linearGradient>
-	<linearGradient id="paint2_linear" x1="99.8125" y1="34.6938" x2="0.1875" y2="34.6938" gradientUnits="userSpaceOnUse">
-	<stop stop-color="#939393"/>
-	<stop offset="1" stop-color="#EBEBEB"/>
-	</linearGradient>
-	<linearGradient id="paint3_linear" x1="99.8012" y1="69.3278" x2="0.201172" y2="69.3278" gradientUnits="userSpaceOnUse">
-	<stop stop-color="#939393"/>
-	<stop offset="1" stop-color="#EBEBEB"/>
-	</linearGradient>
-	<clipPath id="clip0">
-	<rect width="100" height="100" fill="white"/>
-	</clipPath>
-	</defs>
+<g clip-path="url(#clip0)">
+<path d="M66.2891 50.513L100.002 71.8255V28.3005L66.2891 50.513Z" fill="white"/>
+<path d="M0 28.3005V71.8255L33.7125 50.513L0 28.3005Z" fill="white"/>
+<path d="M93.5625 16H6.0625C2.94375 16 0.46875 18.325 0 21.3188L49.8125 54.1375L99.625 21.3188C99.1563 18.325 96.6813 16 93.5625 16Z" fill="white"/>
+<path d="M60.5617 54.287L51.718 60.112C51.193 60.4558 50.5992 60.6245 49.9992 60.6245C49.3992 60.6245 48.8055 60.4558 48.2805 60.112L39.4367 54.2808L0.199219 79.0995C0.680469 82.0683 3.14297 84.3745 6.24922 84.3745H93.7492C96.8555 84.3745 99.318 82.0683 99.7992 79.0995L60.5617 54.287Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="100" height="100" fill="white"/>
+</clipPath>
+</defs>
 </svg>

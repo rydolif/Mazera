@@ -44,7 +44,7 @@
 	min-height: 50px
 	max-width: 300px
 	width: 100%
-	background: linear-gradient(270deg, #014941 0%, #028071 100%)
+	background: linear-gradient(270deg, #343333 1.89%, #474747 44.47%, #767676 82.97%)
 	background-color: $accent
 	padding: 0 15px
 	font-size: 16px
@@ -57,14 +57,18 @@
 		min-height: 50px
 
 	&:hover
-		background: linear-gradient(270deg, #014941 0%, #028071 100%)
+		background: linear-gradient(270deg, #0D0C0C 1.89%, #252525 44.47%, #2C2B2B 82.97%)
 		color: #fff
 		box-shadow: 0px 0px 10px $accent
 
 	&:active
-		background: linear-gradient(270deg, #014941 0%, #028071 100%)
+		background: linear-gradient(270deg, #0D0C0C 1.89%, #252525 44.47%, #2C2B2B 82.97%)
 		color: #fff
 		box-shadow: 0px 0px 10px $accent
+
+	&:disabled
+		background: #6D6D6D
+		color: $text
 
 	&--min
 		min-height: 50px
@@ -127,7 +131,7 @@
 
 				&::before,
 				&::after
-					background-color: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+					background-color: linear-gradient(90deg, #030303 5.95%, #494949 29.91%, #121212 45.14%, #040404 63.51%, #0D0D0D 80.27%, #040404 92.7%)
 
 		.hamburger__item
 			background-color: transparent
@@ -197,7 +201,7 @@
 				justify-content: center
 				align-items: center
 				gap: 10px
-				background: linear-gradient(270deg, #014941 0%, #028071 100%)
+				background: linear-gradient(90deg, #030303 5.95%, #494949 29.91%, #121212 45.14%, #040404 63.51%, #0D0D0D 80.27%, #040404 92.7%)
 				min-height: 50px
 				min-width: 150px
 				padding: 3px 25px
@@ -280,7 +284,8 @@
 
 	&__logo
 		display: block
-		max-width: 330px
+		max-width: 410px
+		width: 100%
 
 		+r(1440)
 			max-width: 250px
@@ -344,7 +349,7 @@
 			align-items: center
 			width: 60px
 			height: 60px
-			background: linear-gradient(270deg, #014941 0%, #028071 100%)
+			background: linear-gradient(270deg, #343333 1.89%, #474747 44.47%, #767676 82.97%)
 
 			+r(1440)
 				width: 50px
@@ -355,8 +360,7 @@
 				height: 40px
 
 			&:hover
-				svg, path
-					fill: $black
+				background: linear-gradient(270deg, #0D0C0C 1.89%, #252525 44.47%, #2C2B2B 82.97%)
 
 			&:active
 				svg, path
@@ -386,7 +390,7 @@
 			justify-content: space-between
 			overflow: auto
 			gap: 20px
-			background: linear-gradient(127.59deg, #1A3F3B 0.08%, #012824 100%)
+			background: linear-gradient(90deg, #232526 0%, #414345 100%)
 			z-index: 1000
 			padding: 25px 50px
 
@@ -415,7 +419,7 @@
 				display: flex
 				justify-content: center
 				align-items: center
-				background: linear-gradient(270deg, #014941 0%, #028071 100%)
+				background: linear-gradient(90deg, #030303 5.95%, #494949 29.91%, #121212 45.14%, #040404 63.51%, #0D0D0D 80.27%, #040404 92.7%)
 				gap: 10px
 				height: 100%
 				width: 100%
@@ -485,7 +489,7 @@
 					height: 50px
 
 			button
-				background: linear-gradient(270deg, #014941 0%, #028071 100%)
+				background: linear-gradient(270deg, #343333 1.89%, #474747 44.47%, #767676 82.97%)
 				max-width: 240px
 				color: $text
 
@@ -527,7 +531,7 @@
 			order: 2
 
 			a
-				background: linear-gradient(270deg, #014941 0%, #028071 100%)
+				background: linear-gradient(270deg, #343333 1.89%, #474747 44.47%, #767676 82.97%)
 				width: 50px
 				height: 50px
 			
@@ -592,7 +596,7 @@
 		a
 			@extend .sidebar__item
 			text-transform: uppercase
-			background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+			background: linear-gradient(90deg, #030303 5.95%, #494949 29.91%, #121212 45.14%, #040404 63.51%, #0D0D0D 80.27%, #040404 92.7%)
 			color: $text
 
 			&:hover
@@ -609,6 +613,14 @@
 		position: relative
 		overflow: hidden
 		height: 100%
+
+		a
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			max-width: fit-content
+			padding: 0 45px
 
 		img
 			height: 100%
@@ -641,7 +653,7 @@
 				display: block
 				width: 20px
 				height: 20px
-				background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+				background: linear-gradient(90deg, #030303 5.95%, #494949 29.91%, #121212 45.14%, #040404 63.51%, #0D0D0D 80.27%, #040404 92.7%)
 				+transition
 
 				+r(1200)
@@ -649,7 +661,7 @@
 					height: 15px
 
 			.swiper-pagination-bullet-active
-				background: linear-gradient(270deg, #014941 0%, #028071 100%)
+				background: linear-gradient(270deg, #343333 1.89%, #474747 44.47%, #767676 82.97%)
 
 
 .main
@@ -729,7 +741,7 @@
 	&__header
 		display: flex
 		align-items: center
-		background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+		background: linear-gradient(90deg, #030303 5.95%, #494949 29.91%, #121212 45.14%, #040404 63.51%, #0D0D0D 80.27%, #040404 92.7%)
 		padding: 20px
 		font-size:  18px
 		line-height: 1
@@ -749,7 +761,7 @@
 			align-items: center
 			flex-shrink: 0
 			margin-right: 10px
-			background-color: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+			// background: linear-gradient(90deg, #030303 5.95%, #494949 29.91%, #121212 45.14%, #040404 63.51%, #0D0D0D 80.27%, #040404 92.7%)
 
 			+r(767)
 				width: 30px
@@ -770,7 +782,7 @@
 			padding: 10px 20px
 
 		&:hover
-			background: linear-gradient(270deg,#014941 0,#028071 100%)
+			background: linear-gradient(270deg, #0D0C0C 1.89%, #252525 44.47%, #2C2B2B 82.97%)
 			color: $text
 
 		&_subtitle
@@ -869,7 +881,7 @@
 		display: grid
 		grid-template: 1fr / minmax(80px, auto) 2fr 1fr 1fr minmax(120px, auto)
 		gap: 20px
-		background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+		background: linear-gradient(90deg, #030303 5.95%, #494949 29.91%, #121212 45.14%, #040404 63.51%, #0D0D0D 80.27%, #040404 92.7%)
 		margin-bottom: 4px
 		padding-right: 20px
 		font-size: 18px
@@ -907,7 +919,7 @@
 			grid-template: 1fr / minmax(80px, auto) 2fr 1fr 2fr minmax(120px, auto)
 			gap: 20px
 			align-items: center
-			background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
+			background: linear-gradient(90deg, #000000 0%, #434343 100%)
 			margin-bottom: 4px
 			line-height: 1
 			padding-right: 20px
@@ -963,14 +975,14 @@
 		&_title
 			display: flex
 			align-items: center
-			background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+			background: linear-gradient(90deg, #030303 5.95%, #494949 29.91%, #121212 45.14%, #040404 63.51%, #0D0D0D 80.27%, #040404 92.7%)
 			min-height: 60px
 			margin-top: 20px
 			margin-bottom: 4px
 			padding: 5px 20px
 			text-transform: uppercase
 			font-size: 18px
-			color: #000
+			color: $text
 
 			+r(1200)
 				margin-top: 15px
@@ -996,7 +1008,7 @@
 		min-height: 70px
 		padding: 4px 30px
 		margin-bottom: 4px
-		background: linear-gradient(270deg,#939393 0,#ebebeb 100%)
+		background: linear-gradient(90deg, #030303 5.95%, #494949 29.91%, #121212 45.14%, #040404 63.51%, #0D0D0D 80.27%, #040404 92.7%)
 		text-transform: uppercase
 		font-size: 18px
 		line-height: 1.2
@@ -1008,6 +1020,9 @@
 
 		+r(576)
 			padding: 0 15px
+
+		svg, path
+			fill: $text
 
 	&__item
 		display: flex
@@ -1092,7 +1107,7 @@
 					align-items: center
 					width: 50px
 					height: 50px
-					background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+					background: linear-gradient(90deg, #030303 5.95%, #494949 29.91%, #121212 45.14%, #040404 63.51%, #0D0D0D 80.27%, #040404 92.7%)
 					border-radius: 50%
 					margin-right: 10px
 					flex-shrink: 0
@@ -1240,7 +1255,7 @@
 			align-items: center
 			min-height: 80px
 			font-size: 24px
-			background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+			background: linear-gradient(90deg, #030303 5.95%, #494949 29.91%, #121212 45.14%, #040404 63.51%, #0D0D0D 80.27%, #040404 92.7%)
 			padding: 25px 10px 25px 20px
 			color: $black
 
@@ -1250,7 +1265,7 @@
 				padding: 15px 20px
 
 			&:hover
-				background: linear-gradient(270deg, #014941 0%, #028071 100%)
+				background: linear-gradient(270deg, #343333 1.89%, #474747 44.47%, #767676 82.97%)
 				color: $text
 
 				path
@@ -1266,7 +1281,7 @@
 				fill: $black
 
 			&--active
-				background: linear-gradient(270deg, #014941 0%, #028071 100%) !important
+				background: linear-gradient(270deg, #343333 1.89%, #474747 44.47%, #767676 82.97%) !important
 				color: $text !important
 
 				path
@@ -1358,8 +1373,8 @@
 			justify-content: space-between
 			align-items: center
 			padding: 5px 20px
-			background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
-			color: #000
+			background: linear-gradient(90deg, #030303 5.95%, #494949 29.91%, #121212 45.14%, #040404 63.51%, #0D0D0D 80.27%, #040404 92.7%)
+			color: $text
 			min-height: 60px
 			font-size: 18px
 			min-width: 900px
@@ -1381,7 +1396,7 @@
 			flex-wrap: wrap
 			align-items: center
 			padding: 5px 30px
-			background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+			background: linear-gradient(90deg, #030303 5.95%, #494949 29.91%, #121212 45.14%, #040404 63.51%, #0D0D0D 80.27%, #040404 92.7%)
 			color: $black
 			min-height: 60px
 			text-transform: uppercase
@@ -1498,7 +1513,7 @@
 	grid-area: footer
 	position: relative
 	display: grid
-	grid-template: 1fr / minmax(auto, 315px) 1fr minmax(145px, auto)
+	grid-template: 1fr / minmax(auto, 410px) 1fr minmax(145px, auto)
 	grid-gap: 85px
 	align-items: center
 	padding: 30px 0
@@ -1524,7 +1539,7 @@
 		transform: translate(-50%, 0)
 		width: 100vw
 		height: 100%
-		background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
+		background: linear-gradient(90deg, #000000 0%, #434343 100%)
 		z-index: -1
 
 		+r(992)
@@ -1655,7 +1670,7 @@
 			justify-content: center
 			align-items: center
 			min-height: 70px
-			background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+			background: linear-gradient(90deg, #030303 5.95%, #494949 29.91%, #121212 45.14%, #040404 63.51%, #0D0D0D 80.27%, #040404 92.7%)
 			text-transform: uppercase
 
 			h3
@@ -1682,7 +1697,7 @@
 		text-align: center
 		min-height: 420px
 		padding: 50px
-		background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
+		background: linear-gradient(90deg, #000000 0%, #434343 100%)
 
 		+r(576)
 			padding: 20px

@@ -44,7 +44,7 @@
 	min-height: 50px
 	max-width: 300px
 	width: 100%
-	background: linear-gradient(270deg, #014941 0%, #028071 100%)
+	background: linear-gradient(270deg, #655F44 0%, #807859 100%)
 	background-color: $accent
 	padding: 0 15px
 	font-size: 16px
@@ -57,14 +57,17 @@
 		min-height: 50px
 
 	&:hover
-		background: linear-gradient(270deg, #014941 0%, #028071 100%)
+		background: linear-gradient(270deg, #988B4F 0%, #A79C73 100%)
 		color: #fff
 		box-shadow: 0px 0px 10px $accent
 
 	&:active
-		background: linear-gradient(270deg, #014941 0%, #028071 100%)
+		background: linear-gradient(270deg, #988B4F 0%, #A79C73 100%)
 		color: #fff
 		box-shadow: 0px 0px 10px $accent
+	
+	&:disabled
+		background: linear-gradient(270deg, #988B4F 0%, #A79C73 100%)
 
 	&--min
 		min-height: 50px
@@ -197,7 +200,7 @@
 				justify-content: center
 				align-items: center
 				gap: 10px
-				background: linear-gradient(270deg, #014941 0%, #028071 100%)
+				background: linear-gradient(270deg, #655F44 0%, #807859 100%)
 				min-height: 50px
 				min-width: 150px
 				padding: 3px 25px
@@ -210,7 +213,7 @@
 
 				&:hover
 					color: $text
-					background:  linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
+					background:  linear-gradient(270deg, #988B4F 0%, #A79C73 100%)
 
 					svg, path
 						fill: $text
@@ -256,8 +259,8 @@
 
 				&:hover
 					&::after
-						border-top: 1px solid $black
-						border-left: 1px solid $black
+						border-top: 1px solid $text
+						border-left: 1px solid $text
 
 			ul
 				position: absolute
@@ -276,7 +279,7 @@
 				border-top: 1px solid $text
 
 			svg, path
-				fill: $black
+				fill: $text 
 
 	&__logo
 		display: block
@@ -344,7 +347,7 @@
 			align-items: center
 			width: 60px
 			height: 60px
-			background: linear-gradient(270deg, #014941 0%, #028071 100%)
+			background: linear-gradient(270deg, #655F44 0%, #807859 100%)
 
 			+r(1440)
 				width: 50px
@@ -355,8 +358,7 @@
 				height: 40px
 
 			&:hover
-				svg, path
-					fill: $black
+				background: linear-gradient(270deg, #988B4F 0%, #A79C73 100%)
 
 			&:active
 				svg, path
@@ -386,7 +388,7 @@
 			justify-content: space-between
 			overflow: auto
 			gap: 20px
-			background: linear-gradient(127.59deg, #1A3F3B 0.08%, #012824 100%)
+			background: linear-gradient(127.59deg, #575747 0.08%, #525244 100%)
 			z-index: 1000
 			padding: 25px 50px
 
@@ -415,7 +417,7 @@
 				display: flex
 				justify-content: center
 				align-items: center
-				background: linear-gradient(270deg, #014941 0%, #028071 100%)
+				background: linear-gradient(270deg, #655F44 0%, #807859 100%)
 				gap: 10px
 				height: 100%
 				width: 100%
@@ -436,7 +438,7 @@
 					justify-content: flex-start
 
 				&:hover
-					background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
+					background: linear-gradient(270deg, #988B4F 0%, #A79C73 100%)
 					color: $text
 
 					svg, path
@@ -485,7 +487,7 @@
 					height: 50px
 
 			button
-				background: linear-gradient(270deg, #014941 0%, #028071 100%)
+				@extend .btn
 				max-width: 240px
 				color: $text
 
@@ -527,7 +529,7 @@
 			order: 2
 
 			a
-				background: linear-gradient(270deg, #014941 0%, #028071 100%)
+				background: linear-gradient(270deg, #655F44 0%, #807859 100%)
 				width: 50px
 				height: 50px
 			
@@ -641,7 +643,7 @@
 				display: block
 				width: 20px
 				height: 20px
-				background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+				background: linear-gradient(92.33deg, #161616 0%, #474738 101.54%)
 				+transition
 
 				+r(1200)
@@ -649,7 +651,7 @@
 					height: 15px
 
 			.swiper-pagination-bullet-active
-				background: linear-gradient(270deg, #014941 0%, #028071 100%)
+				background: linear-gradient(270deg, #655F44 0%, #807859 100%)
 
 
 .main
@@ -729,7 +731,7 @@
 	&__header
 		display: flex
 		align-items: center
-		background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+		background: #B0A383
 		padding: 20px
 		font-size:  18px
 		line-height: 1
@@ -762,7 +764,7 @@
 	&__item
 		display: block
 		padding: 20px
-		background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
+		background: linear-gradient(92.33deg, #161616 0%, #474738 101.54%)
 		margin-bottom: 4px
 		font-size: 18px
 
@@ -770,7 +772,7 @@
 			padding: 10px 20px
 
 		&:hover
-			background: linear-gradient(270deg,#014941 0,#028071 100%)
+			background: linear-gradient(270deg, #988B4F 0%, #A79C73 100%)
 			color: $text
 
 		&_subtitle
@@ -791,7 +793,7 @@
 		justify-content: center
 		align-items: center
 		padding: 55px 20px
-		background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
+		background: linear-gradient(92.33deg, #161616 0%, #474738 101.54%)
 
 		+r(992)
 			padding: 30px
@@ -869,7 +871,7 @@
 		display: grid
 		grid-template: 1fr / minmax(80px, auto) 2fr 1fr 1fr minmax(120px, auto)
 		gap: 20px
-		background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+		background: #B0A383
 		margin-bottom: 4px
 		padding-right: 20px
 		font-size: 18px
@@ -907,7 +909,7 @@
 			grid-template: 1fr / minmax(80px, auto) 2fr 1fr 2fr minmax(120px, auto)
 			gap: 20px
 			align-items: center
-			background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
+			background: linear-gradient(92.33deg, #161616 0%, #474738 101.54%)
 			margin-bottom: 4px
 			line-height: 1
 			padding-right: 20px
@@ -963,7 +965,7 @@
 		&_title
 			display: flex
 			align-items: center
-			background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+			background: #B0A383
 			min-height: 60px
 			margin-top: 20px
 			margin-bottom: 4px
@@ -996,7 +998,7 @@
 		min-height: 70px
 		padding: 4px 30px
 		margin-bottom: 4px
-		background: linear-gradient(270deg,#939393 0,#ebebeb 100%)
+		background: #B0A383
 		text-transform: uppercase
 		font-size: 18px
 		line-height: 1.2
@@ -1015,7 +1017,7 @@
 		min-height: 70px
 		padding: 4px 30px
 		margin-bottom: 4px
-		background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
+		background: linear-gradient(92.33deg, #161616 0%, #474738 101.54%)
 		font-size: 18px
 
 		+r(992)
@@ -1033,7 +1035,7 @@
 	display: flex
 	justify-content: space-between
 	gap: 30px
-	background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
+	background: linear-gradient(92.33deg, #161616 0%, #474738 101.54%)
 	padding: 30px
 	font-size: 18px
 
@@ -1092,7 +1094,7 @@
 					align-items: center
 					width: 50px
 					height: 50px
-					background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+					background: #B0A383
 					border-radius: 50%
 					margin-right: 10px
 					flex-shrink: 0
@@ -1131,7 +1133,7 @@
 
 
 .contacts
-	background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
+	background: linear-gradient(92.33deg, #161616 0%, #474738 101.54%)
 	padding: 30px
 
 	+r(1440)
@@ -1186,7 +1188,7 @@
 			max-width: 30px
 		
 		svg, path
-			fill: $text
+			fill: $accent
 
 
 .profile
@@ -1250,7 +1252,7 @@
 				padding: 15px 20px
 
 			&:hover
-				background: linear-gradient(270deg, #014941 0%, #028071 100%)
+				background: linear-gradient(92.33deg, #161616 0%, #474738 101.54%)
 				color: $text
 
 				path
@@ -1266,7 +1268,7 @@
 				fill: $black
 
 			&--active
-				background: linear-gradient(270deg, #014941 0%, #028071 100%) !important
+				background: linear-gradient(270deg, #655F44 0%, #807859 100%) !important
 				color: $text !important
 
 				path
@@ -1331,6 +1333,9 @@
 					+r(1200)
 						margin-right: 25px
 
+					&:hover
+						color: $black
+
 			&:nth-child(4)
 				order: 1
 				justify-items: end
@@ -1358,7 +1363,7 @@
 			justify-content: space-between
 			align-items: center
 			padding: 5px 20px
-			background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+			background: #B0A383
 			color: #000
 			min-height: 60px
 			font-size: 18px
@@ -1381,7 +1386,7 @@
 			flex-wrap: wrap
 			align-items: center
 			padding: 5px 30px
-			background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+			background: #B0A383
 			color: $black
 			min-height: 60px
 			text-transform: uppercase
@@ -1416,7 +1421,7 @@
 			align-items: center
 			font-weight: 400
 			min-height: 70px
-			background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
+			background: linear-gradient(92.33deg, #161616 0%, #474738 101.54%)
 			padding: 5px 30px
 
 			+r(1200)
@@ -1466,7 +1471,7 @@
 
 	&__form
 		padding: 30px
-		background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
+		background: linear-gradient(92.33deg, #161616 0%, #474738 101.54%)
 
 		+r(1200)
 			padding: 15px
@@ -1524,7 +1529,7 @@
 		transform: translate(-50%, 0)
 		width: 100vw
 		height: 100%
-		background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
+		background: linear-gradient(92.33deg, #161616 0%, #474738 101.54%)
 		z-index: -1
 
 		+r(992)
@@ -1655,7 +1660,7 @@
 			justify-content: center
 			align-items: center
 			min-height: 70px
-			background: linear-gradient(270deg, #939393 0%, #EBEBEB 100%)
+			background: #B0A383
 			text-transform: uppercase
 
 			h3
@@ -1666,7 +1671,7 @@
 
 		&_content
 			padding: 20px
-			background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
+			background: linear-gradient(92.33deg, #161616 0%, #474738 101.54%)
 
 			+r(1200)
 				padding: 20px
@@ -1682,7 +1687,7 @@
 		text-align: center
 		min-height: 420px
 		padding: 50px
-		background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
+		background: linear-gradient(92.33deg, #161616 0%, #474738 101.54%)
 
 		+r(576)
 			padding: 20px
@@ -1696,7 +1701,7 @@
 			fill: $accent
 		
 		p
-			color: #f3f5f8
+			color: #F3F5F8
 
 
 .form

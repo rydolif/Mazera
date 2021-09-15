@@ -589,6 +589,9 @@
 			display: none
 
 	&__nav
+		position: relative
+		z-index: 100
+
 		a
 			@extend .sidebar__item
 			text-transform: uppercase
@@ -604,6 +607,27 @@
 		svg, path
 			fill: $text
 			margin-right: 10px
+
+		li
+			&:hover
+				ul
+					display: block
+
+		&_submenu
+			position: absolute
+			left: 100%
+			top: 0
+			z-index: 1
+			width: 100%
+			border-left: 4px solid $bg
+			display: none
+
+			a
+				background: $light
+
+				&:hover
+					background: $accent
+					color: $black
 
 	&__slider
 		position: relative
@@ -763,7 +787,7 @@
 		display: block
 		padding: 20px
 		background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
-		margin-bottom: 4px
+		border-bottom: 4px solid #012824
 		font-size: 18px
 
 		+r(767)
@@ -1548,6 +1572,12 @@
 				grid-gap: 10px
 				text-align: left
 
+			li
+				position: relative
+				&:hover
+					ul
+						display: block
+
 			a
 				font-size: 20px
 				text-transform: uppercase
@@ -1557,6 +1587,29 @@
 				
 				+r(1200)
 					font-size: 16px
+
+		&_submenu
+			position: absolute
+			left: 0
+			bottom: 100%
+			display: none
+
+			li
+				width: 280px
+				text-align: left
+				border-bottom: 4px solid $bg
+
+				&:first-child
+					border-top: 4px solid $bg
+
+			a
+				display: flex
+				background: linear-gradient(92.33deg, #161616 0%, #2C3837 101.54%)
+				padding: 10px
+
+				&:hover
+					background: linear-gradient(270deg, #089887 0%, #0ABEA9 100%)
+					color: #fff
 
 	&__soc
 		@extend .header__soc

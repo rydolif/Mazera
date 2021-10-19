@@ -645,7 +645,18 @@
 			max-width: fit-content
 			padding: 0 45px
 
-		img
+			+r(992)
+				min-height: 40px
+
+			+r(480)
+				min-height: 35px
+				padding: 0 20px
+	
+		.bottom-responsive
+			+r(1440)
+				top: 72%
+
+		img, source, picture
 			height: 100%
 			width: auto
 			object-fit: cover
